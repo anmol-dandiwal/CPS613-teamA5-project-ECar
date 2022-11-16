@@ -63,6 +63,56 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property _2022_audi_e_tron_gt_premium_plus_4wd_sedan_angular_front() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("2022-audi-e-tron-gt-premium-plus-4wd-sedan-angular-front", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Calendar() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Calendar", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property full_battery() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("full-battery", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property history_icon_vector_22881107() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("history-icon-vector-22881107", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property map_command_comments_map_icon_11562897555gcydeuswdx() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("map-command-comments-map-icon-11562897555gcydeuswdx", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property rotatingCar() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("rotatingCar", resourceCulture)

@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ECarApp",
+    "\\ECarApp\\obj"
   ],
-  "SelectedNode": "\\C:\\Users\\victi\\Source\\Repos\\CPS613-teamA5-project-ECar",
+  "SelectedNode": "\\ECarApp\\Form1.vb",
   "PreviewInSolutionExplorer": false
 }
