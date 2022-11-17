@@ -1,6 +1,6 @@
 is_global = true
 build_property.ApplicationManifest = 
-build_property.StartupObject = Sub Main
+build_property.StartupObject = ECarApp.My.MyApplication
 build_property.ApplicationDefaultFont = 
 build_property.ApplicationHighDpiMode = 
 build_property.ApplicationUseCompatibleTextRendering = 
@@ -14,4 +14,4 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ECarApp
-build_property.ProjectDir = C:\Users\victi\Source\Repos\CPS613-teamA5-project-ECar\ECarApp\
+build_property.ProjectDir = C:\Users\victi\source\repos\CPS613-teamA5-project-ECar\ECarApp\

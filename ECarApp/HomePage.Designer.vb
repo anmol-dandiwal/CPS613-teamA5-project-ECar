@@ -46,21 +46,21 @@ Partial Class HomePage
         'PictureBox1
         '
         Me.PictureBox1.Image = Global.ECarApp.My.Resources.Resources.settingUser
-        Me.PictureBox1.Location = New System.Drawing.Point(25, 26)
+        Me.PictureBox1.Location = New System.Drawing.Point(24, 26)
         Me.PictureBox1.Margin = New System.Windows.Forms.Padding(6)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(91, 94)
+        Me.PictureBox1.Size = New System.Drawing.Size(92, 94)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
         'PictureBox2
         '
-        Me.PictureBox2.Image = Global.ECarApp.My.Resources.Resources._2022_audi_e_tron_gt_premium_plus_4wd_sedan_angular_front
+        Me.PictureBox2.Image = Global.ECarApp.My.Resources.Resources.Car
         Me.PictureBox2.Location = New System.Drawing.Point(46, 236)
         Me.PictureBox2.Margin = New System.Windows.Forms.Padding(6)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(645, 422)
+        Me.PictureBox2.Size = New System.Drawing.Size(644, 422)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox2.TabIndex = 1
         Me.PictureBox2.TabStop = False
@@ -73,8 +73,8 @@ Partial Class HomePage
         Me.ScheduleButton.Location = New System.Drawing.Point(46, 840)
         Me.ScheduleButton.Margin = New System.Windows.Forms.Padding(6)
         Me.ScheduleButton.Name = "ScheduleButton"
-        Me.ScheduleButton.Padding = New System.Windows.Forms.Padding(75, 0, 0, 0)
-        Me.ScheduleButton.Size = New System.Drawing.Size(650, 197)
+        Me.ScheduleButton.Padding = New System.Windows.Forms.Padding(76, 0, 0, 0)
+        Me.ScheduleButton.Size = New System.Drawing.Size(650, 196)
         Me.ScheduleButton.TabIndex = 2
         Me.ScheduleButton.Text = "Schedule"
         Me.ScheduleButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -85,11 +85,11 @@ Partial Class HomePage
         Me.pastTripButton.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.pastTripButton.Font = New System.Drawing.Font("Eras Medium ITC", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.pastTripButton.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.pastTripButton.Location = New System.Drawing.Point(46, 1063)
+        Me.pastTripButton.Location = New System.Drawing.Point(46, 1064)
         Me.pastTripButton.Margin = New System.Windows.Forms.Padding(6)
         Me.pastTripButton.Name = "pastTripButton"
-        Me.pastTripButton.Padding = New System.Windows.Forms.Padding(75, 0, 0, 0)
-        Me.pastTripButton.Size = New System.Drawing.Size(645, 197)
+        Me.pastTripButton.Padding = New System.Windows.Forms.Padding(76, 0, 0, 0)
+        Me.pastTripButton.Size = New System.Drawing.Size(644, 196)
         Me.pastTripButton.TabIndex = 3
         Me.pastTripButton.Text = "Trip History"
         Me.pastTripButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -100,11 +100,11 @@ Partial Class HomePage
         Me.MapButton.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.MapButton.Font = New System.Drawing.Font("Eras Medium ITC", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.MapButton.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.MapButton.Location = New System.Drawing.Point(46, 1283)
+        Me.MapButton.Location = New System.Drawing.Point(46, 1284)
         Me.MapButton.Margin = New System.Windows.Forms.Padding(6)
         Me.MapButton.Name = "MapButton"
-        Me.MapButton.Padding = New System.Windows.Forms.Padding(75, 0, 0, 0)
-        Me.MapButton.Size = New System.Drawing.Size(645, 197)
+        Me.MapButton.Padding = New System.Windows.Forms.Padding(76, 0, 0, 0)
+        Me.MapButton.Size = New System.Drawing.Size(644, 196)
         Me.MapButton.TabIndex = 5
         Me.MapButton.Text = "Map"
         Me.MapButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -115,6 +115,7 @@ Partial Class HomePage
         Me.BatteryLabel.AutoSize = True
         Me.BatteryLabel.Font = New System.Drawing.Font("Eras Medium ITC", 22.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.BatteryLabel.Location = New System.Drawing.Point(178, 144)
+        Me.BatteryLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.BatteryLabel.Name = "BatteryLabel"
         Me.BatteryLabel.Size = New System.Drawing.Size(144, 68)
         Me.BatteryLabel.TabIndex = 6
@@ -122,8 +123,9 @@ Partial Class HomePage
         '
         'BatteryIcon
         '
-        Me.BatteryIcon.Image = Global.ECarApp.My.Resources.Resources.full_battery
+        Me.BatteryIcon.Image = Global.ECarApp.My.Resources.Resources.BatteryIcon
         Me.BatteryIcon.Location = New System.Drawing.Point(90, 138)
+        Me.BatteryIcon.Margin = New System.Windows.Forms.Padding(4)
         Me.BatteryIcon.Name = "BatteryIcon"
         Me.BatteryIcon.Size = New System.Drawing.Size(102, 84)
         Me.BatteryIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -135,6 +137,7 @@ Partial Class HomePage
         Me.StatusLabel.AutoSize = True
         Me.StatusLabel.Font = New System.Drawing.Font("Eras Medium ITC", 22.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.StatusLabel.Location = New System.Drawing.Point(388, 144)
+        Me.StatusLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.StatusLabel.Name = "StatusLabel"
         Me.StatusLabel.Size = New System.Drawing.Size(266, 68)
         Me.StatusLabel.TabIndex = 8
@@ -144,8 +147,9 @@ Partial Class HomePage
         '
         Me.CurrLocationLabel.Font = New System.Drawing.Font("Eras Medium ITC", 22.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.CurrLocationLabel.Location = New System.Drawing.Point(12, 664)
+        Me.CurrLocationLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.CurrLocationLabel.Name = "CurrLocationLabel"
-        Me.CurrLocationLabel.Size = New System.Drawing.Size(713, 136)
+        Me.CurrLocationLabel.Size = New System.Drawing.Size(712, 136)
         Me.CurrLocationLabel.TabIndex = 9
         Me.CurrLocationLabel.Text = "Near 250 Bremner Blvd Toronto, ON"
         Me.CurrLocationLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -154,9 +158,10 @@ Partial Class HomePage
         '
         Me.CalendarIcon.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.CalendarIcon.Image = CType(resources.GetObject("CalendarIcon.Image"), System.Drawing.Image)
-        Me.CalendarIcon.Location = New System.Drawing.Point(473, 879)
+        Me.CalendarIcon.Location = New System.Drawing.Point(472, 880)
+        Me.CalendarIcon.Margin = New System.Windows.Forms.Padding(4)
         Me.CalendarIcon.Name = "CalendarIcon"
-        Me.CalendarIcon.Size = New System.Drawing.Size(107, 110)
+        Me.CalendarIcon.Size = New System.Drawing.Size(108, 110)
         Me.CalendarIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.CalendarIcon.TabIndex = 10
         Me.CalendarIcon.TabStop = False
@@ -165,9 +170,10 @@ Partial Class HomePage
         '
         Me.PictureBox4.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(473, 1110)
+        Me.PictureBox4.Location = New System.Drawing.Point(472, 1110)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(107, 110)
+        Me.PictureBox4.Size = New System.Drawing.Size(108, 110)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox4.TabIndex = 11
         Me.PictureBox4.TabStop = False
@@ -175,18 +181,18 @@ Partial Class HomePage
         'PictureBox5
         '
         Me.PictureBox5.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.PictureBox5.Image = Global.ECarApp.My.Resources.Resources.map_command_comments_map_icon_11562897555gcydeuswdx
-        Me.PictureBox5.Location = New System.Drawing.Point(473, 1330)
+        Me.PictureBox5.Image = Global.ECarApp.My.Resources.Resources.MapIcon
+        Me.PictureBox5.Location = New System.Drawing.Point(472, 1330)
+        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(108, 95)
+        Me.PictureBox5.Size = New System.Drawing.Size(108, 96)
         Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox5.TabIndex = 12
         Me.PictureBox5.TabStop = False
         '
-        'Form1
+        'HomePage
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(13.0!, 32.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(740, 1529)
         Me.Controls.Add(Me.PictureBox5)
@@ -202,8 +208,9 @@ Partial Class HomePage
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Margin = New System.Windows.Forms.Padding(6)
-        Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Name = "HomePage"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "HomePage"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BatteryIcon, System.ComponentModel.ISupportInitialize).EndInit()
