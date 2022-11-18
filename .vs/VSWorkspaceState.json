@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ECarApp"
   ],
-  "SelectedNode": "\\ECarApp.sln",
+  "SelectedNode": "\\ECarApp\\HomePage.vb",
   "PreviewInSolutionExplorer": false
 }

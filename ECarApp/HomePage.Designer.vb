@@ -23,8 +23,8 @@ Partial Class HomePage
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(HomePage))
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.UserIcon = New System.Windows.Forms.PictureBox()
+        Me.CarPicture = New System.Windows.Forms.PictureBox()
         Me.ScheduleButton = New System.Windows.Forms.Button()
         Me.pastTripButton = New System.Windows.Forms.Button()
         Me.MapButton = New System.Windows.Forms.Button()
@@ -33,48 +33,49 @@ Partial Class HomePage
         Me.StatusLabel = New System.Windows.Forms.Label()
         Me.CurrLocationLabel = New System.Windows.Forms.Label()
         Me.CalendarIcon = New System.Windows.Forms.PictureBox()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.HistoryIcon = New System.Windows.Forms.PictureBox()
+        Me.MapIcon = New System.Windows.Forms.PictureBox()
+        CType(Me.UserIcon, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CarPicture, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BatteryIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CalendarIcon, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.HistoryIcon, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MapIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'PictureBox1
+        'UserIcon
         '
-        Me.PictureBox1.Image = Global.ECarApp.My.Resources.Resources.settingUser
-        Me.PictureBox1.Location = New System.Drawing.Point(24, 26)
-        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(6)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(92, 94)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.UserIcon.Image = Global.ECarApp.My.Resources.Resources.settingUser
+        Me.UserIcon.Location = New System.Drawing.Point(9, 8)
+        Me.UserIcon.Margin = New System.Windows.Forms.Padding(6)
+        Me.UserIcon.Name = "UserIcon"
+        Me.UserIcon.Size = New System.Drawing.Size(46, 46)
+        Me.UserIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.UserIcon.TabIndex = 0
+        Me.UserIcon.TabStop = False
         '
-        'PictureBox2
+        'CarPicture
         '
-        Me.PictureBox2.Image = Global.ECarApp.My.Resources.Resources.Car
-        Me.PictureBox2.Location = New System.Drawing.Point(46, 236)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(6)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(644, 422)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox2.TabIndex = 1
-        Me.PictureBox2.TabStop = False
+        Me.CarPicture.Image = Global.ECarApp.My.Resources.Resources.Car
+        Me.CarPicture.Location = New System.Drawing.Point(27, 134)
+        Me.CarPicture.Margin = New System.Windows.Forms.Padding(6)
+        Me.CarPicture.Name = "CarPicture"
+        Me.CarPicture.Size = New System.Drawing.Size(322, 211)
+        Me.CarPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.CarPicture.TabIndex = 1
+        Me.CarPicture.TabStop = False
         '
         'ScheduleButton
         '
         Me.ScheduleButton.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.ScheduleButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ScheduleButton.Font = New System.Drawing.Font("Eras Medium ITC", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ScheduleButton.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ScheduleButton.Location = New System.Drawing.Point(46, 840)
+        Me.ScheduleButton.Location = New System.Drawing.Point(27, 454)
         Me.ScheduleButton.Margin = New System.Windows.Forms.Padding(6)
         Me.ScheduleButton.Name = "ScheduleButton"
-        Me.ScheduleButton.Padding = New System.Windows.Forms.Padding(76, 0, 0, 0)
-        Me.ScheduleButton.Size = New System.Drawing.Size(650, 196)
+        Me.ScheduleButton.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
+        Me.ScheduleButton.Size = New System.Drawing.Size(325, 88)
         Me.ScheduleButton.TabIndex = 2
         Me.ScheduleButton.Text = "Schedule"
         Me.ScheduleButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -83,13 +84,14 @@ Partial Class HomePage
         'pastTripButton
         '
         Me.pastTripButton.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.pastTripButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.pastTripButton.Font = New System.Drawing.Font("Eras Medium ITC", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.pastTripButton.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.pastTripButton.Location = New System.Drawing.Point(46, 1064)
+        Me.pastTripButton.Location = New System.Drawing.Point(27, 554)
         Me.pastTripButton.Margin = New System.Windows.Forms.Padding(6)
         Me.pastTripButton.Name = "pastTripButton"
-        Me.pastTripButton.Padding = New System.Windows.Forms.Padding(76, 0, 0, 0)
-        Me.pastTripButton.Size = New System.Drawing.Size(644, 196)
+        Me.pastTripButton.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
+        Me.pastTripButton.Size = New System.Drawing.Size(325, 88)
         Me.pastTripButton.TabIndex = 3
         Me.pastTripButton.Text = "Trip History"
         Me.pastTripButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -98,13 +100,14 @@ Partial Class HomePage
         'MapButton
         '
         Me.MapButton.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.MapButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.MapButton.Font = New System.Drawing.Font("Eras Medium ITC", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.MapButton.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.MapButton.Location = New System.Drawing.Point(46, 1284)
+        Me.MapButton.Location = New System.Drawing.Point(27, 654)
         Me.MapButton.Margin = New System.Windows.Forms.Padding(6)
         Me.MapButton.Name = "MapButton"
-        Me.MapButton.Padding = New System.Windows.Forms.Padding(76, 0, 0, 0)
-        Me.MapButton.Size = New System.Drawing.Size(644, 196)
+        Me.MapButton.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
+        Me.MapButton.Size = New System.Drawing.Size(325, 88)
         Me.MapButton.TabIndex = 5
         Me.MapButton.Text = "Map"
         Me.MapButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -113,21 +116,21 @@ Partial Class HomePage
         'BatteryLabel
         '
         Me.BatteryLabel.AutoSize = True
-        Me.BatteryLabel.Font = New System.Drawing.Font("Eras Medium ITC", 22.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.BatteryLabel.Location = New System.Drawing.Point(178, 144)
+        Me.BatteryLabel.Font = New System.Drawing.Font("Eras Medium ITC", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.BatteryLabel.Location = New System.Drawing.Point(79, 76)
         Me.BatteryLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.BatteryLabel.Name = "BatteryLabel"
-        Me.BatteryLabel.Size = New System.Drawing.Size(144, 68)
+        Me.BatteryLabel.Size = New System.Drawing.Size(71, 32)
         Me.BatteryLabel.TabIndex = 6
         Me.BatteryLabel.Text = "78%"
         '
         'BatteryIcon
         '
         Me.BatteryIcon.Image = Global.ECarApp.My.Resources.Resources.BatteryIcon
-        Me.BatteryIcon.Location = New System.Drawing.Point(90, 138)
+        Me.BatteryIcon.Location = New System.Drawing.Point(36, 71)
         Me.BatteryIcon.Margin = New System.Windows.Forms.Padding(4)
         Me.BatteryIcon.Name = "BatteryIcon"
-        Me.BatteryIcon.Size = New System.Drawing.Size(102, 84)
+        Me.BatteryIcon.Size = New System.Drawing.Size(51, 42)
         Me.BatteryIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.BatteryIcon.TabIndex = 7
         Me.BatteryIcon.TabStop = False
@@ -135,21 +138,21 @@ Partial Class HomePage
         'StatusLabel
         '
         Me.StatusLabel.AutoSize = True
-        Me.StatusLabel.Font = New System.Drawing.Font("Eras Medium ITC", 22.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.StatusLabel.Location = New System.Drawing.Point(388, 144)
+        Me.StatusLabel.Font = New System.Drawing.Font("Eras Medium ITC", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.StatusLabel.Location = New System.Drawing.Point(209, 76)
         Me.StatusLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.StatusLabel.Name = "StatusLabel"
-        Me.StatusLabel.Size = New System.Drawing.Size(266, 68)
+        Me.StatusLabel.Size = New System.Drawing.Size(131, 32)
         Me.StatusLabel.TabIndex = 8
         Me.StatusLabel.Text = "Available"
         '
         'CurrLocationLabel
         '
-        Me.CurrLocationLabel.Font = New System.Drawing.Font("Eras Medium ITC", 22.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.CurrLocationLabel.Location = New System.Drawing.Point(12, 664)
+        Me.CurrLocationLabel.Font = New System.Drawing.Font("Eras Medium ITC", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.CurrLocationLabel.Location = New System.Drawing.Point(12, 368)
         Me.CurrLocationLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.CurrLocationLabel.Name = "CurrLocationLabel"
-        Me.CurrLocationLabel.Size = New System.Drawing.Size(712, 136)
+        Me.CurrLocationLabel.Size = New System.Drawing.Size(356, 80)
         Me.CurrLocationLabel.TabIndex = 9
         Me.CurrLocationLabel.Text = "Near 250 Bremner Blvd Toronto, ON"
         Me.CurrLocationLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -158,45 +161,45 @@ Partial Class HomePage
         '
         Me.CalendarIcon.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.CalendarIcon.Image = CType(resources.GetObject("CalendarIcon.Image"), System.Drawing.Image)
-        Me.CalendarIcon.Location = New System.Drawing.Point(472, 880)
+        Me.CalendarIcon.Location = New System.Drawing.Point(251, 469)
         Me.CalendarIcon.Margin = New System.Windows.Forms.Padding(4)
         Me.CalendarIcon.Name = "CalendarIcon"
-        Me.CalendarIcon.Size = New System.Drawing.Size(108, 110)
+        Me.CalendarIcon.Size = New System.Drawing.Size(54, 54)
         Me.CalendarIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.CalendarIcon.TabIndex = 10
         Me.CalendarIcon.TabStop = False
         '
-        'PictureBox4
+        'HistoryIcon
         '
-        Me.PictureBox4.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(472, 1110)
-        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(4)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(108, 110)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox4.TabIndex = 11
-        Me.PictureBox4.TabStop = False
+        Me.HistoryIcon.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.HistoryIcon.Image = CType(resources.GetObject("HistoryIcon.Image"), System.Drawing.Image)
+        Me.HistoryIcon.Location = New System.Drawing.Point(257, 571)
+        Me.HistoryIcon.Margin = New System.Windows.Forms.Padding(4)
+        Me.HistoryIcon.Name = "HistoryIcon"
+        Me.HistoryIcon.Size = New System.Drawing.Size(54, 54)
+        Me.HistoryIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.HistoryIcon.TabIndex = 11
+        Me.HistoryIcon.TabStop = False
         '
-        'PictureBox5
+        'MapIcon
         '
-        Me.PictureBox5.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.PictureBox5.Image = Global.ECarApp.My.Resources.Resources.MapIcon
-        Me.PictureBox5.Location = New System.Drawing.Point(472, 1330)
-        Me.PictureBox5.Margin = New System.Windows.Forms.Padding(4)
-        Me.PictureBox5.Name = "PictureBox5"
-        Me.PictureBox5.Size = New System.Drawing.Size(108, 96)
-        Me.PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox5.TabIndex = 12
-        Me.PictureBox5.TabStop = False
+        Me.MapIcon.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.MapIcon.Image = Global.ECarApp.My.Resources.Resources.MapIcon
+        Me.MapIcon.Location = New System.Drawing.Point(257, 674)
+        Me.MapIcon.Margin = New System.Windows.Forms.Padding(4)
+        Me.MapIcon.Name = "MapIcon"
+        Me.MapIcon.Size = New System.Drawing.Size(54, 54)
+        Me.MapIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.MapIcon.TabIndex = 12
+        Me.MapIcon.TabStop = False
         '
         'HomePage
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ClientSize = New System.Drawing.Size(740, 1529)
-        Me.Controls.Add(Me.PictureBox5)
-        Me.Controls.Add(Me.PictureBox4)
+        Me.ClientSize = New System.Drawing.Size(380, 757)
+        Me.Controls.Add(Me.MapIcon)
+        Me.Controls.Add(Me.HistoryIcon)
         Me.Controls.Add(Me.CalendarIcon)
         Me.Controls.Add(Me.CurrLocationLabel)
         Me.Controls.Add(Me.StatusLabel)
@@ -205,25 +208,25 @@ Partial Class HomePage
         Me.Controls.Add(Me.MapButton)
         Me.Controls.Add(Me.pastTripButton)
         Me.Controls.Add(Me.ScheduleButton)
-        Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.CarPicture)
+        Me.Controls.Add(Me.UserIcon)
         Me.Margin = New System.Windows.Forms.Padding(6)
         Me.Name = "HomePage"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "HomePage"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.UserIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CarPicture, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BatteryIcon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CalendarIcon, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.HistoryIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MapIcon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents UserIcon As PictureBox
+    Friend WithEvents CarPicture As PictureBox
     Friend WithEvents ScheduleButton As Button
     Friend WithEvents pastTripButton As Button
     Friend WithEvents MapButton As Button
@@ -232,6 +235,6 @@ Partial Class HomePage
     Friend WithEvents StatusLabel As Label
     Friend WithEvents CurrLocationLabel As Label
     Friend WithEvents CalendarIcon As PictureBox
-    Friend WithEvents PictureBox4 As PictureBox
-    Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents HistoryIcon As PictureBox
+    Friend WithEvents MapIcon As PictureBox
 End Class
