@@ -35,12 +35,16 @@ Partial Class HomePage
         Me.CalendarIcon = New System.Windows.Forms.PictureBox()
         Me.HistoryIcon = New System.Windows.Forms.PictureBox()
         Me.MapIcon = New System.Windows.Forms.PictureBox()
+        Me.SwapIcon = New System.Windows.Forms.PictureBox()
+        Me.RiderLabel = New System.Windows.Forms.Label()
+        Me.OwnerLabel = New System.Windows.Forms.Label()
         CType(Me.UserIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CarPicture, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BatteryIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CalendarIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.HistoryIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MapIcon, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SwapIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'UserIcon
@@ -193,11 +197,48 @@ Partial Class HomePage
         Me.MapIcon.TabIndex = 12
         Me.MapIcon.TabStop = False
         '
+        'SwapIcon
+        '
+        Me.SwapIcon.Image = Global.ECarApp.My.Resources.Resources.SwapIcon
+        Me.SwapIcon.Location = New System.Drawing.Point(179, 17)
+        Me.SwapIcon.Name = "SwapIcon"
+        Me.SwapIcon.Size = New System.Drawing.Size(34, 31)
+        Me.SwapIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.SwapIcon.TabIndex = 15
+        Me.SwapIcon.TabStop = False
+        '
+        'RiderLabel
+        '
+        Me.RiderLabel.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.RiderLabel.Font = New System.Drawing.Font("Eras Medium ITC", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.RiderLabel.ForeColor = System.Drawing.SystemColors.ControlText
+        Me.RiderLabel.Location = New System.Drawing.Point(224, 18)
+        Me.RiderLabel.Name = "RiderLabel"
+        Me.RiderLabel.Size = New System.Drawing.Size(86, 27)
+        Me.RiderLabel.TabIndex = 14
+        Me.RiderLabel.Text = "Rider"
+        Me.RiderLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'OwnerLabel
+        '
+        Me.OwnerLabel.AutoSize = True
+        Me.OwnerLabel.BackColor = System.Drawing.SystemColors.ControlDark
+        Me.OwnerLabel.Font = New System.Drawing.Font("Eras Medium ITC", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.OwnerLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.OwnerLabel.Location = New System.Drawing.Point(81, 18)
+        Me.OwnerLabel.Name = "OwnerLabel"
+        Me.OwnerLabel.Size = New System.Drawing.Size(86, 27)
+        Me.OwnerLabel.TabIndex = 13
+        Me.OwnerLabel.Text = "Owner"
+        '
         'HomePage
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(380, 757)
+        Me.Controls.Add(Me.SwapIcon)
+        Me.Controls.Add(Me.RiderLabel)
+        Me.Controls.Add(Me.OwnerLabel)
         Me.Controls.Add(Me.MapIcon)
         Me.Controls.Add(Me.HistoryIcon)
         Me.Controls.Add(Me.CalendarIcon)
@@ -220,6 +261,7 @@ Partial Class HomePage
         CType(Me.CalendarIcon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.HistoryIcon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MapIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SwapIcon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -237,4 +279,7 @@ Partial Class HomePage
     Friend WithEvents CalendarIcon As PictureBox
     Friend WithEvents HistoryIcon As PictureBox
     Friend WithEvents MapIcon As PictureBox
+    Friend WithEvents SwapIcon As PictureBox
+    Friend WithEvents RiderLabel As Label
+    Friend WithEvents OwnerLabel As Label
 End Class

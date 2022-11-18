@@ -28,9 +28,9 @@ Partial Class AccountPage
         Me.BackButton = New System.Windows.Forms.Button()
         Me.OwnerLabel = New System.Windows.Forms.Label()
         Me.RiderLabel = New System.Windows.Forms.Label()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.SwapIcon = New System.Windows.Forms.PictureBox()
         CType(Me.BackIcon, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SwapIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'YourAccountLabel
@@ -93,22 +93,22 @@ Partial Class AccountPage
         Me.RiderLabel.Text = "Rider"
         Me.RiderLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'PictureBox1
+        'SwapIcon
         '
-        Me.PictureBox1.Image = Global.ECarApp.My.Resources.Resources.SwapIcon
-        Me.PictureBox1.Location = New System.Drawing.Point(172, 93)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(34, 31)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 9
-        Me.PictureBox1.TabStop = False
+        Me.SwapIcon.Image = Global.ECarApp.My.Resources.Resources.SwapIcon
+        Me.SwapIcon.Location = New System.Drawing.Point(172, 93)
+        Me.SwapIcon.Name = "SwapIcon"
+        Me.SwapIcon.Size = New System.Drawing.Size(34, 31)
+        Me.SwapIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.SwapIcon.TabIndex = 9
+        Me.SwapIcon.TabStop = False
         '
         'AccountPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(380, 757)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.SwapIcon)
         Me.Controls.Add(Me.RiderLabel)
         Me.Controls.Add(Me.OwnerLabel)
         Me.Controls.Add(Me.BackIcon)
@@ -118,7 +118,7 @@ Partial Class AccountPage
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Account"
         CType(Me.BackIcon, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SwapIcon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -129,5 +129,5 @@ Partial Class AccountPage
     Friend WithEvents BackButton As Button
     Friend WithEvents OwnerLabel As Label
     Friend WithEvents RiderLabel As Label
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents SwapIcon As PictureBox
 End Class
