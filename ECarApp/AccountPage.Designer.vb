@@ -75,7 +75,7 @@ Partial Class AccountPage
         Me.OwnerLabel.BackColor = System.Drawing.SystemColors.ControlDark
         Me.OwnerLabel.Font = New System.Drawing.Font("Eras Medium ITC", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.OwnerLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.OwnerLabel.Location = New System.Drawing.Point(74, 94)
+        Me.OwnerLabel.Location = New System.Drawing.Point(72, 64)
         Me.OwnerLabel.Name = "OwnerLabel"
         Me.OwnerLabel.Size = New System.Drawing.Size(86, 27)
         Me.OwnerLabel.TabIndex = 7
@@ -86,7 +86,7 @@ Partial Class AccountPage
         Me.RiderLabel.BackColor = System.Drawing.SystemColors.ControlLight
         Me.RiderLabel.Font = New System.Drawing.Font("Eras Medium ITC", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.RiderLabel.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.RiderLabel.Location = New System.Drawing.Point(217, 94)
+        Me.RiderLabel.Location = New System.Drawing.Point(215, 64)
         Me.RiderLabel.Name = "RiderLabel"
         Me.RiderLabel.Size = New System.Drawing.Size(86, 27)
         Me.RiderLabel.TabIndex = 8
@@ -96,7 +96,7 @@ Partial Class AccountPage
         'SwapIcon
         '
         Me.SwapIcon.Image = Global.ECarApp.My.Resources.Resources.SwapIcon
-        Me.SwapIcon.Location = New System.Drawing.Point(172, 93)
+        Me.SwapIcon.Location = New System.Drawing.Point(170, 63)
         Me.SwapIcon.Name = "SwapIcon"
         Me.SwapIcon.Size = New System.Drawing.Size(34, 31)
         Me.SwapIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage

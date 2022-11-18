@@ -30,4 +30,8 @@
         SwapIcon.Size = New Size(SwapIcon.Width - 5, SwapIcon.Height - 5)
         SwapIcon.Location = New Point(SwapIcon.Location.X + 2.5, SwapIcon.Location.Y + 2.5)
     End Sub
+
+    Private Sub BackButton_Click(sender As Object, e As EventArgs) Handles BackButton.Click, BackIcon.Click
+        Me.Close()
+    End Sub
 End Class
