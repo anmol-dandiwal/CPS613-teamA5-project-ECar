@@ -36,3 +36,4 @@ C:\Users\victi\Source\Repos\anmol-dandiwal\CPS613-teamA5-project-ECar\ECarApp\ob
 C:\Users\victi\Source\Repos\anmol-dandiwal\CPS613-teamA5-project-ECar\ECarApp\obj\Debug\net6.0-windows\ECarApp.pdb
 C:\Users\victi\Source\Repos\anmol-dandiwal\CPS613-teamA5-project-ECar\ECarApp\obj\Debug\net6.0-windows\ECarApp.genruntimeconfig.cache
 C:\Users\victi\Source\Repos\anmol-dandiwal\CPS613-teamA5-project-ECar\ECarApp\obj\Debug\net6.0-windows\ref\ECarApp.dll
+C:\Users\victi\Source\Repos\anmol-dandiwal\CPS613-teamA5-project-ECar\ECarApp\obj\Debug\net6.0-windows\ECarApp.AccountPage.resources

@@ -34,7 +34,7 @@ Partial Class SchedulePage
         '
         Me.Calendar.BackColor = System.Drawing.SystemColors.MenuHighlight
         Me.Calendar.Font = New System.Drawing.Font("Eras Medium ITC", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Calendar.Location = New System.Drawing.Point(78, 48)
+        Me.Calendar.Location = New System.Drawing.Point(64, 76)
         Me.Calendar.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.Calendar.Name = "Calendar"
         Me.Calendar.TabIndex = 0
@@ -46,7 +46,7 @@ Partial Class SchedulePage
         '
         Me.BackIcon.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.BackIcon.Image = CType(resources.GetObject("BackIcon.Image"), System.Drawing.Image)
-        Me.BackIcon.Location = New System.Drawing.Point(16, 8)
+        Me.BackIcon.Location = New System.Drawing.Point(20, 10)
         Me.BackIcon.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.BackIcon.Name = "BackIcon"
         Me.BackIcon.Size = New System.Drawing.Size(33, 35)
@@ -59,7 +59,7 @@ Partial Class SchedulePage
         Me.BackButton.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.BackButton.FlatAppearance.BorderSize = 0
         Me.BackButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BackButton.Location = New System.Drawing.Point(8, 7)
+        Me.BackButton.Location = New System.Drawing.Point(12, 9)
         Me.BackButton.Margin = New System.Windows.Forms.Padding(2, 1, 2, 1)
         Me.BackButton.Name = "BackButton"
         Me.BackButton.Size = New System.Drawing.Size(49, 38)
@@ -71,7 +71,7 @@ Partial Class SchedulePage
         Me.ScheduleLabel.AutoSize = True
         Me.ScheduleLabel.Font = New System.Drawing.Font("Eras Medium ITC", 22.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ScheduleLabel.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.ScheduleLabel.Location = New System.Drawing.Point(121, 12)
+        Me.ScheduleLabel.Location = New System.Drawing.Point(117, 13)
         Me.ScheduleLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.ScheduleLabel.Name = "ScheduleLabel"
         Me.ScheduleLabel.Size = New System.Drawing.Size(136, 34)
