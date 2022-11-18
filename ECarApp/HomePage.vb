@@ -9,6 +9,15 @@ Public Class HomePage
         AccountPage.Show()
     End Sub
 
+    Private Sub UserIcon_MouseEnter(sender As Object, e As EventArgs) Handles UserIcon.MouseEnter
+        sender.Size = New Size(sender.Width + 5, sender.Height + 5)
+        sender.Location = New Point(sender.Location.X - 2.5, sender.Location.Y - 2.5)
+    End Sub
+    Private Sub UserIcon_MouseLeave(sender As Object, e As EventArgs) Handles UserIcon.MouseLeave
+        sender.Size = New Size(sender.Width - 5, sender.Height - 5)
+        sender.Location = New Point(sender.Location.X + 2.5, sender.Location.Y + 2.5)
+    End Sub
+
     Private Sub RiderLabel_Click(sender As Object, e As EventArgs) Handles RiderLabel.Click
         sender.BackColor = Color.FromName("ControlDark")
         sender.ForeColor = Color.FromName("ControlLightLight")
@@ -32,12 +41,12 @@ Public Class HomePage
     End Sub
 
     Private Sub SwapIcon_Highlight(sender As Object, e As EventArgs) Handles SwapIcon.MouseEnter
-        SwapIcon.Size = New Size(SwapIcon.Width + 5, SwapIcon.Height + 5)
-        SwapIcon.Location = New Point(SwapIcon.Location.X - 2.5, SwapIcon.Location.Y - 2.5)
+        sender.Size = New Size(sender.Width + 5, sender.Height + 5)
+        sender.Location = New Point(sender.Location.X - 2.5, sender.Location.Y - 2.5)
     End Sub
 
     Private Sub SwapIcon_Unhighlight(sender As Object, e As EventArgs) Handles SwapIcon.MouseLeave
-        SwapIcon.Size = New Size(SwapIcon.Width - 5, SwapIcon.Height - 5)
-        SwapIcon.Location = New Point(SwapIcon.Location.X + 2.5, SwapIcon.Location.Y + 2.5)
+        sender.Size = New Size(sender.Width - 5, sender.Height - 5)
+        sender.Location = New Point(sender.Location.X + 2.5, sender.Location.Y + 2.5)
     End Sub
 End Class
