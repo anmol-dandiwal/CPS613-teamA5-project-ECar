@@ -1,23 +1,4 @@
-﻿Imports System.Security.Authentication.ExtendedProtection
-
-Public Class HomePage
-    Private Sub ScheduleButton_Click(sender As Object, e As EventArgs) Handles ScheduleButton.Click, CalendarIcon.Click
-        SchedulePage.Show()
-    End Sub
-
-    Private Sub UserIcon_Click(sender As Object, e As EventArgs) Handles UserIcon.Click
-        AccountPage.Show()
-    End Sub
-
-    Private Sub UserIcon_MouseEnter(sender As Object, e As EventArgs) Handles UserIcon.MouseEnter
-        sender.Size = New Size(sender.Width + 5, sender.Height + 5)
-        sender.Location = New Point(sender.Location.X - 2.5, sender.Location.Y - 2.5)
-    End Sub
-    Private Sub UserIcon_MouseLeave(sender As Object, e As EventArgs) Handles UserIcon.MouseLeave
-        sender.Size = New Size(sender.Width - 5, sender.Height - 5)
-        sender.Location = New Point(sender.Location.X + 2.5, sender.Location.Y + 2.5)
-    End Sub
-
+﻿Public Class RiderHomePage
     Private Sub RiderLabel_Click(sender As Object, e As EventArgs) Handles RiderLabel.Click
         sender.BackColor = Color.FromName("ControlDark")
         sender.ForeColor = Color.FromName("ControlLightLight")
@@ -33,9 +14,10 @@ Public Class HomePage
     End Sub
 
     Private Sub SwapIcon_Click(sender As Object, e As EventArgs) Handles SwapIcon.Click
-        If (RiderLabel.BackColor = Color.FromName("ControlLight")) Then
+        If (OwnerLabel.BackColor = Color.FromName("ControlLight")) Then
+            RiderLabel_Click(RiderLabel, e)
             Me.Hide()
-            RiderHomePage.Show()
+            HomePage.Show()
         End If
     End Sub
 
