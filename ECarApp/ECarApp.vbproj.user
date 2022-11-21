@@ -5,6 +5,9 @@
     <Compile Update="AccountPage.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="PastTripsPage.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="RiderHomePage.vb">
       <SubType>Form</SubType>
     </Compile>
