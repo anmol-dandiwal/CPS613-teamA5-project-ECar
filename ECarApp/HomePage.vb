@@ -34,9 +34,8 @@ Public Class HomePage
 
     Private Sub SwapIcon_Click(sender As Object, e As EventArgs) Handles SwapIcon.Click
         If (RiderLabel.BackColor = Color.FromName("ControlLight")) Then
-            RiderLabel_Click(RiderLabel, e)
-        Else
-            OwnerLabel_Click(OwnerLabel, e)
+            Me.Hide()
+            RiderHomePage.Show()
         End If
     End Sub
 
@@ -48,5 +47,9 @@ Public Class HomePage
     Private Sub SwapIcon_Unhighlight(sender As Object, e As EventArgs) Handles SwapIcon.MouseLeave
         sender.Size = New Size(sender.Width - 5, sender.Height - 5)
         sender.Location = New Point(sender.Location.X + 2.5, sender.Location.Y + 2.5)
+    End Sub
+
+    Private Sub pastTripButton_Click(sender As Object, e As EventArgs) Handles pastTripButton.Click
+        PastTripsPage.Show()
     End Sub
 End Class
