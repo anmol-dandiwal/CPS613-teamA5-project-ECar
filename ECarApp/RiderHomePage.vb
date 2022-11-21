@@ -30,4 +30,9 @@
         sender.Size = New Size(sender.Width - 5, sender.Height - 5)
         sender.Location = New Point(sender.Location.X + 2.5, sender.Location.Y + 2.5)
     End Sub
+
+    Private Sub pastTripButton_Click(sender As Object, e As EventArgs) Handles pastTripButton.Click, HistoryIcon.Click
+        RiderPastTripsPage.Show()
+    End Sub
+
 End Class

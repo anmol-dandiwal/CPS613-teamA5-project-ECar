@@ -17,6 +17,7 @@ Public Class PastTripsPage
         pastTrips.Columns.Add("Rider Name")
         pastTrips.Columns.Add("Cost")
         pastTrips.Columns.Add("Distance")
+        pastTrips.Columns.Add("Tip")
 
         pastTrips.Rows.Add("Jeff A", "$10.23", "5KM")
         pastTrips.Rows.Add("Malcom B", "$12.49", "6KM")
