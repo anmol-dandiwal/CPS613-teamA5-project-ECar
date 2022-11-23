@@ -3,6 +3,7 @@
 Public Class HomePage
     Dim IntrusionAlert = False
     Dim CollisionAlert = False
+    Dim FailureAlert = False
     Private Sub ScheduleButton_Click(sender As Object, e As EventArgs) Handles ScheduleButton.Click, CalendarIcon.Click
         If Not IntrusionAlert Then
             IntrusionDialog.ShowDialog()
@@ -13,7 +14,12 @@ Public Class HomePage
     End Sub
 
     Private Sub UserIcon_Click(sender As Object, e As EventArgs) Handles UserIcon.Click
-        AccountPage.Show()
+        If Not FailureAlert Then
+            FailureDialog.ShowDialog()
+            FailureAlert = True
+        Else
+            AccountPage.Show()
+        End If
     End Sub
 
     Private Sub UserIcon_MouseEnter(sender As Object, e As EventArgs) Handles UserIcon.MouseEnter
