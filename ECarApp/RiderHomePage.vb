@@ -42,4 +42,17 @@
     Private Sub CloseApp(sender As Object, e As EventArgs) Handles Me.Closed
         HomePage.Close()
     End Sub
+
+    Private Sub ChatBtn_Click(sender As Object, e As EventArgs) Handles ChatBtn.Click
+        Dim message, defaultValue As String
+        Dim box As Object
+
+        message = "Please type the issue you are facing."
+        defaultValue = "I can't reset my password"
+
+        box = InputBox(message, "Chat Support", defaultValue)
+
+        MsgBox("Thank you for you message, our team will get back to you in 3-5 business days.")
+
+    End Sub
 End Class

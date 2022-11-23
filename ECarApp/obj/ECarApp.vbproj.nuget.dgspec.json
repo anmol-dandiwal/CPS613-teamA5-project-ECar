@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\victi\\source\\repos\\anmol-dandiwal\\CPS613-teamA5-project-ECar\\ECarApp\\ECarApp.vbproj": {}
+    "\\\\Mac\\Home\\Desktop\\cps616\\CPS613-teamA5-project-ECar\\ECarApp\\ECarApp.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\victi\\source\\repos\\anmol-dandiwal\\CPS613-teamA5-project-ECar\\ECarApp\\ECarApp.vbproj": {
+    "\\\\Mac\\Home\\Desktop\\cps616\\CPS613-teamA5-project-ECar\\ECarApp\\ECarApp.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\victi\\source\\repos\\anmol-dandiwal\\CPS613-teamA5-project-ECar\\ECarApp\\ECarApp.vbproj",
+        "projectUniqueName": "\\\\Mac\\Home\\Desktop\\cps616\\CPS613-teamA5-project-ECar\\ECarApp\\ECarApp.vbproj",
         "projectName": "ECarApp",
-        "projectPath": "C:\\Users\\victi\\source\\repos\\anmol-dandiwal\\CPS613-teamA5-project-ECar\\ECarApp\\ECarApp.vbproj",
-        "packagesPath": "C:\\Users\\victi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\victi\\source\\repos\\anmol-dandiwal\\CPS613-teamA5-project-ECar\\ECarApp\\obj\\",
+        "projectPath": "\\\\Mac\\Home\\Desktop\\cps616\\CPS613-teamA5-project-ECar\\ECarApp\\ECarApp.vbproj",
+        "packagesPath": "C:\\Users\\Mittson\\.nuget\\packages\\",
+        "outputPath": "\\\\Mac\\Home\\Desktop\\cps616\\CPS613-teamA5-project-ECar\\ECarApp\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\victi\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Mittson\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -62,7 +58,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
