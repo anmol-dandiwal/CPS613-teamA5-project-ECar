@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class SchedulePage
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,13 +20,14 @@ Partial Class SchedulePage
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(SchedulePage))
         Me.Calendar = New System.Windows.Forms.MonthCalendar()
         Me.BackIcon = New System.Windows.Forms.PictureBox()
         Me.BackButton = New System.Windows.Forms.Button()
         Me.ScheduleLabel = New System.Windows.Forms.Label()
+        Me.CalendarLabel = New System.Windows.Forms.Label()
         CType(Me.BackIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -34,7 +35,7 @@ Partial Class SchedulePage
         '
         Me.Calendar.BackColor = System.Drawing.SystemColors.MenuHighlight
         Me.Calendar.Font = New System.Drawing.Font("Eras Medium ITC", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Calendar.Location = New System.Drawing.Point(64, 76)
+        Me.Calendar.Location = New System.Drawing.Point(73, 111)
         Me.Calendar.Margin = New System.Windows.Forms.Padding(5, 4, 5, 4)
         Me.Calendar.Name = "Calendar"
         Me.Calendar.TabIndex = 0
@@ -78,12 +79,23 @@ Partial Class SchedulePage
         Me.ScheduleLabel.TabIndex = 3
         Me.ScheduleLabel.Text = "Schedule"
         '
+        'CalendarLabel
+        '
+        Me.CalendarLabel.AutoSize = True
+        Me.CalendarLabel.Font = New System.Drawing.Font("Eras Medium ITC", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.CalendarLabel.Location = New System.Drawing.Point(73, 89)
+        Me.CalendarLabel.Name = "CalendarLabel"
+        Me.CalendarLabel.Size = New System.Drawing.Size(122, 18)
+        Me.CalendarLabel.TabIndex = 7
+        Me.CalendarLabel.Text = "Current Schedule"
+        '
         'SchedulePage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(380, 757)
+        Me.Controls.Add(Me.CalendarLabel)
         Me.Controls.Add(Me.ScheduleLabel)
         Me.Controls.Add(Me.BackIcon)
         Me.Controls.Add(Me.BackButton)
@@ -102,4 +114,5 @@ Partial Class SchedulePage
     Friend WithEvents BackIcon As PictureBox
     Friend WithEvents BackButton As Button
     Friend WithEvents ScheduleLabel As Label
+    Friend WithEvents CalendarLabel As Label
 End Class

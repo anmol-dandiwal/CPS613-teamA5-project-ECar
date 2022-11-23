@@ -73,7 +73,7 @@ Partial Class HomePage
         '
         Me.ScheduleButton.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.ScheduleButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ScheduleButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ScheduleButton.Font = New System.Drawing.Font("Eras Medium ITC", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ScheduleButton.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.ScheduleButton.Location = New System.Drawing.Point(27, 454)
         Me.ScheduleButton.Margin = New System.Windows.Forms.Padding(6)
@@ -89,7 +89,7 @@ Partial Class HomePage
         '
         Me.pastTripButton.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.pastTripButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.pastTripButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.pastTripButton.Font = New System.Drawing.Font("Eras Medium ITC", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.pastTripButton.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.pastTripButton.Location = New System.Drawing.Point(27, 554)
         Me.pastTripButton.Margin = New System.Windows.Forms.Padding(6)
@@ -105,7 +105,7 @@ Partial Class HomePage
         '
         Me.MapButton.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.MapButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.MapButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.MapButton.Font = New System.Drawing.Font("Eras Medium ITC", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.MapButton.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.MapButton.Location = New System.Drawing.Point(27, 654)
         Me.MapButton.Margin = New System.Windows.Forms.Padding(6)
@@ -120,11 +120,11 @@ Partial Class HomePage
         'BatteryLabel
         '
         Me.BatteryLabel.AutoSize = True
-        Me.BatteryLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.BatteryLabel.Font = New System.Drawing.Font("Eras Medium ITC", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.BatteryLabel.Location = New System.Drawing.Point(79, 76)
         Me.BatteryLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.BatteryLabel.Name = "BatteryLabel"
-        Me.BatteryLabel.Size = New System.Drawing.Size(73, 33)
+        Me.BatteryLabel.Size = New System.Drawing.Size(71, 32)
         Me.BatteryLabel.TabIndex = 6
         Me.BatteryLabel.Text = "78%"
         '
@@ -142,17 +142,17 @@ Partial Class HomePage
         'StatusLabel
         '
         Me.StatusLabel.AutoSize = True
-        Me.StatusLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.StatusLabel.Font = New System.Drawing.Font("Eras Medium ITC", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.StatusLabel.Location = New System.Drawing.Point(209, 76)
         Me.StatusLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.StatusLabel.Name = "StatusLabel"
-        Me.StatusLabel.Size = New System.Drawing.Size(134, 33)
+        Me.StatusLabel.Size = New System.Drawing.Size(131, 32)
         Me.StatusLabel.TabIndex = 8
         Me.StatusLabel.Text = "Available"
         '
         'CurrLocationLabel
         '
-        Me.CurrLocationLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.CurrLocationLabel.Font = New System.Drawing.Font("Eras Medium ITC", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.CurrLocationLabel.Location = New System.Drawing.Point(12, 368)
         Me.CurrLocationLabel.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.CurrLocationLabel.Name = "CurrLocationLabel"
@@ -210,7 +210,7 @@ Partial Class HomePage
         'RiderLabel
         '
         Me.RiderLabel.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.RiderLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.RiderLabel.Font = New System.Drawing.Font("Eras Medium ITC", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.RiderLabel.ForeColor = System.Drawing.SystemColors.ControlText
         Me.RiderLabel.Location = New System.Drawing.Point(224, 18)
         Me.RiderLabel.Name = "RiderLabel"
@@ -223,11 +223,11 @@ Partial Class HomePage
         '
         Me.OwnerLabel.AutoSize = True
         Me.OwnerLabel.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.OwnerLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.OwnerLabel.Font = New System.Drawing.Font("Eras Medium ITC", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.OwnerLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.OwnerLabel.Location = New System.Drawing.Point(81, 18)
         Me.OwnerLabel.Name = "OwnerLabel"
-        Me.OwnerLabel.Size = New System.Drawing.Size(85, 29)
+        Me.OwnerLabel.Size = New System.Drawing.Size(86, 27)
         Me.OwnerLabel.TabIndex = 13
         Me.OwnerLabel.Text = "Owner"
         '
