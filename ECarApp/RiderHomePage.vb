@@ -55,4 +55,5 @@
         MsgBox("Thank you for you message, our team will get back to you in 3-5 business days.")
 
     End Sub
+
 End Class
