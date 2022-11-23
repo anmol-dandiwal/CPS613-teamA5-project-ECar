@@ -40,5 +40,11 @@ Public Class RiderPastTripsPage
         PopulatePastTrips()
     End Sub
 
+    Private Sub showRoute() Handles RiderPastTripsTable.CellContentDoubleClick
+        showRouteWindow.Show()
+    End Sub
+
+
+
 
 End Class
