@@ -6,7 +6,6 @@
         NotificationBodyLabel.Text = "From: " & BookARidePage.fromAddress & "." & vbCrLf & "To: " & BookARidePage.destinationAddress & "."
         CancelScheduledRide.Hide()
         ReturnToHomePage.Hide()
-
     End Sub
 
     Private Sub DeclineButton_Click(sender As Object, e As EventArgs) Handles DeclineButton.Click

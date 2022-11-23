@@ -102,7 +102,6 @@
     End Sub
     Private Sub EditTripButton_Click(sender As Object, e As EventArgs) Handles EditButton.Click
         BookARidePage.Show()
-        Me.Hide()
     End Sub
 
     Private Sub ViewTripStatusButton_Click(sender As Object, e As EventArgs) Handles ViewTripStatusButton.Click

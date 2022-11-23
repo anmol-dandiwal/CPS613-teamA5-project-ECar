@@ -229,7 +229,7 @@ Partial Class RiderHomePage
         Me.ViewTripStatusButton.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.ViewTripStatusButton.FlatAppearance.BorderSize = 0
         Me.ViewTripStatusButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ViewTripStatusButton.Font = New System.Drawing.Font("Eras Medium ITC", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ViewTripStatusButton.Font = New System.Drawing.Font("Eras Medium ITC", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ViewTripStatusButton.ForeColor = System.Drawing.SystemColors.ControlLight
         Me.ViewTripStatusButton.Location = New System.Drawing.Point(109, 72)
         Me.ViewTripStatusButton.Name = "ViewTripStatusButton"
@@ -237,7 +237,6 @@ Partial Class RiderHomePage
         Me.ViewTripStatusButton.Size = New System.Drawing.Size(161, 42)
         Me.ViewTripStatusButton.TabIndex = 32
         Me.ViewTripStatusButton.Text = "View Trip Status"
-        Me.ViewTripStatusButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.ViewTripStatusButton.UseVisualStyleBackColor = False
         '
         'RiderHomePage

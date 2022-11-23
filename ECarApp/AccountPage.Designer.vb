@@ -26,9 +26,6 @@ Partial Class AccountPage
         Me.YourAccountLabel = New System.Windows.Forms.Label()
         Me.BackIcon = New System.Windows.Forms.PictureBox()
         Me.BackButton = New System.Windows.Forms.Button()
-        Me.OwnerLabel = New System.Windows.Forms.Label()
-        Me.RiderLabel = New System.Windows.Forms.Label()
-        Me.SwapIcon = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.VehicleInfoLabel = New System.Windows.Forms.Label()
         Me.CarPicture = New System.Windows.Forms.PictureBox()
@@ -37,7 +34,6 @@ Partial Class AccountPage
         Me.BankEdit = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.BackIcon, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.SwapIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CarPicture, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BankEdit, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -78,40 +74,6 @@ Partial Class AccountPage
         Me.BackButton.Size = New System.Drawing.Size(49, 38)
         Me.BackButton.TabIndex = 6
         Me.BackButton.UseVisualStyleBackColor = False
-        '
-        'OwnerLabel
-        '
-        Me.OwnerLabel.AutoSize = True
-        Me.OwnerLabel.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.OwnerLabel.Font = New System.Drawing.Font("Eras Medium ITC", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.OwnerLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.OwnerLabel.Location = New System.Drawing.Point(72, 64)
-        Me.OwnerLabel.Name = "OwnerLabel"
-        Me.OwnerLabel.Size = New System.Drawing.Size(86, 27)
-        Me.OwnerLabel.TabIndex = 7
-        Me.OwnerLabel.Text = "Owner"
-        '
-        'RiderLabel
-        '
-        Me.RiderLabel.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.RiderLabel.Font = New System.Drawing.Font("Eras Medium ITC", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.RiderLabel.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.RiderLabel.Location = New System.Drawing.Point(215, 64)
-        Me.RiderLabel.Name = "RiderLabel"
-        Me.RiderLabel.Size = New System.Drawing.Size(86, 27)
-        Me.RiderLabel.TabIndex = 8
-        Me.RiderLabel.Text = "Rider"
-        Me.RiderLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
-        'SwapIcon
-        '
-        Me.SwapIcon.Image = Global.ECarApp.My.Resources.Resources.SwapIcon
-        Me.SwapIcon.Location = New System.Drawing.Point(170, 63)
-        Me.SwapIcon.Name = "SwapIcon"
-        Me.SwapIcon.Size = New System.Drawing.Size(34, 31)
-        Me.SwapIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.SwapIcon.TabIndex = 9
-        Me.SwapIcon.TabStop = False
         '
         'Label1
         '
@@ -196,9 +158,6 @@ Partial Class AccountPage
         Me.Controls.Add(Me.CarPicture)
         Me.Controls.Add(Me.VehicleInfoLabel)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.SwapIcon)
-        Me.Controls.Add(Me.RiderLabel)
-        Me.Controls.Add(Me.OwnerLabel)
         Me.Controls.Add(Me.BackIcon)
         Me.Controls.Add(Me.BackButton)
         Me.Controls.Add(Me.YourAccountLabel)
@@ -206,7 +165,6 @@ Partial Class AccountPage
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Account"
         CType(Me.BackIcon, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.SwapIcon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CarPicture, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BankEdit, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -218,9 +176,6 @@ Partial Class AccountPage
     Friend WithEvents YourAccountLabel As Label
     Friend WithEvents BackIcon As PictureBox
     Friend WithEvents BackButton As Button
-    Friend WithEvents OwnerLabel As Label
-    Friend WithEvents RiderLabel As Label
-    Friend WithEvents SwapIcon As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents VehicleInfoLabel As Label
     Friend WithEvents CarPicture As PictureBox

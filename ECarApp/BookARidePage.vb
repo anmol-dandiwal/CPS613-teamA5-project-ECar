@@ -12,6 +12,8 @@
 
     Private Sub ScheduleNowRadioButton_CheckedChanged(sender As Object, e As EventArgs) Handles ScheduleNowButton.CheckedChanged
         If ScheduleNowButton.Checked Then
+            dateOfRide = FormatDateTime(Now, DateFormat.ShortDate).ToString()
+            DatePickerInput.Value = Now
             DatePickerInput.Hide()
         Else
             DatePickerInput.Show()
@@ -57,5 +59,9 @@
 
     Private Sub DestinationAddressInput_TextChanged(sender As Object, e As EventArgs) Handles DestinationAddressInput.TextChanged
         destinationAddress = DestinationAddressInput.Text
+    End Sub
+
+    Private Sub BookARidePage_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+
     End Sub
 End Class
