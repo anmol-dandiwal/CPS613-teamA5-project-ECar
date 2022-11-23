@@ -225,7 +225,7 @@ Partial Class RiderHomePage
         Me.StatusWindow.Font = New System.Drawing.Font("Eras Medium ITC", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.StatusWindow.Location = New System.Drawing.Point(17, 72)
         Me.StatusWindow.Name = "StatusWindow"
-        Me.StatusWindow.Size = New System.Drawing.Size(342, 147)
+        Me.StatusWindow.Size = New System.Drawing.Size(342, 198)
         Me.StatusWindow.TabIndex = 28
         Me.StatusWindow.Text = "You currently do not have a ride scheduled."
         Me.StatusWindow.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -247,7 +247,7 @@ Partial Class RiderHomePage
         Me.EditButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.EditButton.Font = New System.Drawing.Font("Eras Medium ITC", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.EditButton.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.EditButton.Location = New System.Drawing.Point(27, 232)
+        Me.EditButton.Location = New System.Drawing.Point(29, 284)
         Me.EditButton.Name = "EditButton"
         Me.EditButton.Size = New System.Drawing.Size(149, 42)
         Me.EditButton.TabIndex = 30
@@ -261,7 +261,7 @@ Partial Class RiderHomePage
         Me.DeleteTripButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.DeleteTripButton.Font = New System.Drawing.Font("Eras Medium ITC", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.DeleteTripButton.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.DeleteTripButton.Location = New System.Drawing.Point(198, 232)
+        Me.DeleteTripButton.Location = New System.Drawing.Point(200, 284)
         Me.DeleteTripButton.Name = "DeleteTripButton"
         Me.DeleteTripButton.Size = New System.Drawing.Size(149, 42)
         Me.DeleteTripButton.TabIndex = 31
