@@ -27,6 +27,7 @@ Partial Class RiderPastTripsPage
         Me.RiderPastTripsLabel = New System.Windows.Forms.Label()
         Me.BackIcon = New System.Windows.Forms.PictureBox()
         Me.BackButton = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.RiderPastTripsTable, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BackIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -51,12 +52,12 @@ Partial Class RiderPastTripsPage
         'RiderPastTripsLabel
         '
         Me.RiderPastTripsLabel.AutoSize = True
-        Me.RiderPastTripsLabel.Font = New System.Drawing.Font("Eras Medium ITC", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.RiderPastTripsLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.RiderPastTripsLabel.ForeColor = System.Drawing.SystemColors.ControlText
         Me.RiderPastTripsLabel.Location = New System.Drawing.Point(135, 32)
         Me.RiderPastTripsLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.RiderPastTripsLabel.Name = "RiderPastTripsLabel"
-        Me.RiderPastTripsLabel.Size = New System.Drawing.Size(134, 32)
+        Me.RiderPastTripsLabel.Size = New System.Drawing.Size(147, 33)
         Me.RiderPastTripsLabel.TabIndex = 10
         Me.RiderPastTripsLabel.Text = "Past Trips"
         '
@@ -84,11 +85,22 @@ Partial Class RiderPastTripsPage
         Me.BackButton.TabIndex = 9
         Me.BackButton.UseVisualStyleBackColor = False
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.Location = New System.Drawing.Point(83, 79)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(208, 15)
+        Me.Label1.TabIndex = 12
+        Me.Label1.Text = "Double click a cell to view route map."
+        '
         'RiderPastTripsPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(380, 757)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.RiderPastTripsTable)
         Me.Controls.Add(Me.RiderPastTripsLabel)
         Me.Controls.Add(Me.BackIcon)
@@ -107,4 +119,5 @@ Partial Class RiderPastTripsPage
     Friend WithEvents RiderPastTripsLabel As Label
     Friend WithEvents BackIcon As PictureBox
     Friend WithEvents BackButton As Button
+    Friend WithEvents Label1 As Label
 End Class

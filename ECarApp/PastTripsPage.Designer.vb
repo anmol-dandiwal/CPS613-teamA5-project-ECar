@@ -27,7 +27,6 @@ Partial Class PastTripsPage
         Me.BackIcon = New System.Windows.Forms.PictureBox()
         Me.BackButton = New System.Windows.Forms.Button()
         Me.PastTripsTable = New System.Windows.Forms.DataGridView()
-        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.BackIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PastTripsTable, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -35,12 +34,12 @@ Partial Class PastTripsPage
         'PastTripsLabel
         '
         Me.PastTripsLabel.AutoSize = True
-        Me.PastTripsLabel.Font = New System.Drawing.Font("Eras Medium ITC", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.PastTripsLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.PastTripsLabel.ForeColor = System.Drawing.SystemColors.ControlText
         Me.PastTripsLabel.Location = New System.Drawing.Point(130, 25)
         Me.PastTripsLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.PastTripsLabel.Name = "PastTripsLabel"
-        Me.PastTripsLabel.Size = New System.Drawing.Size(134, 32)
+        Me.PastTripsLabel.Size = New System.Drawing.Size(147, 33)
         Me.PastTripsLabel.TabIndex = 6
         Me.PastTripsLabel.Text = "Past Trips"
         '
@@ -85,22 +84,11 @@ Partial Class PastTripsPage
         Me.PastTripsTable.Size = New System.Drawing.Size(321, 632)
         Me.PastTripsTable.TabIndex = 7
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Eras Medium ITC", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(85, 96)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(205, 14)
-        Me.Label1.TabIndex = 8
-        Me.Label1.Text = "Double click a cell to view route map."
-        '
         'PastTripsPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(380, 757)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PastTripsTable)
         Me.Controls.Add(Me.PastTripsLabel)
         Me.Controls.Add(Me.BackIcon)
@@ -119,5 +107,4 @@ Partial Class PastTripsPage
     Friend WithEvents BackIcon As PictureBox
     Friend WithEvents BackButton As Button
     Friend WithEvents PastTripsTable As DataGridView
-    Friend WithEvents Label1 As Label
 End Class
