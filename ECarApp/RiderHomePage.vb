@@ -38,4 +38,8 @@
     Private Sub ControlsButton_Click(sender As Object, e As EventArgs) Handles ControlsButton.Click, CarControlsIcon.Click
         CarControlsPage.Show()
     End Sub
+
+    Private Sub CloseApp(sender As Object, e As EventArgs) Handles Me.Closed
+        HomePage.Close()
+    End Sub
 End Class

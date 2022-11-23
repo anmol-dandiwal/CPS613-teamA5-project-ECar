@@ -9,3 +9,7 @@
 /.vs/ECarApp/v17/.suo
 /.vs/ProjectEvaluation/ecarapp.metadata.v5.2
 /ECarApp/ECarApp.vbproj.user
+/.vs/ECarApp/v17/.wsuo
+/.vs/slnx.sqlite
+/ECarApp/bin/Debug/net6.0-windows/ECarApp.pdb
+/ECarApp/bin/Debug/net6.0-windows/ECarApp.dll
