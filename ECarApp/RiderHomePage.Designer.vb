@@ -36,6 +36,11 @@ Partial Class RiderHomePage
         Me.CarControlsIcon = New System.Windows.Forms.PictureBox()
         Me.ControlsButton = New System.Windows.Forms.Button()
         Me.ChatBtn = New System.Windows.Forms.Button()
+        Me.StatusWindow = New System.Windows.Forms.Label()
+        Me.XButton = New System.Windows.Forms.Button()
+        Me.EditButton = New System.Windows.Forms.Button()
+        Me.DeleteTripButton = New System.Windows.Forms.Button()
+        Me.ViewTripStatusButton = New System.Windows.Forms.Button()
         CType(Me.SwapIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UserIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -214,11 +219,73 @@ Partial Class RiderHomePage
         Me.ChatBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.ChatBtn.UseVisualStyleBackColor = False
         '
+        'StatusWindow
+        '
+        Me.StatusWindow.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.StatusWindow.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.StatusWindow.Location = New System.Drawing.Point(17, 72)
+        Me.StatusWindow.Name = "StatusWindow"
+        Me.StatusWindow.Size = New System.Drawing.Size(342, 147)
+        Me.StatusWindow.TabIndex = 28
+        Me.StatusWindow.Text = "You currently do not have a ride scheduled."
+        Me.StatusWindow.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'XButton
+        '
+        Me.XButton.BackColor = System.Drawing.Color.Transparent
+        Me.XButton.Location = New System.Drawing.Point(334, 72)
+        Me.XButton.Name = "XButton"
+        Me.XButton.Size = New System.Drawing.Size(25, 24)
+        Me.XButton.TabIndex = 29
+        Me.XButton.Text = "X"
+        Me.XButton.UseVisualStyleBackColor = False
+        '
+        'EditButton
+        '
+        Me.EditButton.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.EditButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.EditButton.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.EditButton.Location = New System.Drawing.Point(27, 232)
+        Me.EditButton.Name = "EditButton"
+        Me.EditButton.Size = New System.Drawing.Size(149, 42)
+        Me.EditButton.TabIndex = 30
+        Me.EditButton.Text = "Edit Trip"
+        Me.EditButton.UseVisualStyleBackColor = False
+        '
+        'DeleteTripButton
+        '
+        Me.DeleteTripButton.BackColor = System.Drawing.Color.Firebrick
+        Me.DeleteTripButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.DeleteTripButton.ForeColor = System.Drawing.SystemColors.ControlLight
+        Me.DeleteTripButton.Location = New System.Drawing.Point(198, 232)
+        Me.DeleteTripButton.Name = "DeleteTripButton"
+        Me.DeleteTripButton.Size = New System.Drawing.Size(149, 42)
+        Me.DeleteTripButton.TabIndex = 31
+        Me.DeleteTripButton.Text = "Delete Trip"
+        Me.DeleteTripButton.UseVisualStyleBackColor = False
+        '
+        'ViewTripStatusButton
+        '
+        Me.ViewTripStatusButton.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.ViewTripStatusButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ViewTripStatusButton.ForeColor = System.Drawing.SystemColors.ControlLight
+        Me.ViewTripStatusButton.Location = New System.Drawing.Point(109, 72)
+        Me.ViewTripStatusButton.Name = "ViewTripStatusButton"
+        Me.ViewTripStatusButton.Size = New System.Drawing.Size(161, 42)
+        Me.ViewTripStatusButton.TabIndex = 32
+        Me.ViewTripStatusButton.Text = "View Trip Status"
+        Me.ViewTripStatusButton.UseVisualStyleBackColor = False
+        '
         'RiderHomePage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(380, 757)
+        Me.Controls.Add(Me.ViewTripStatusButton)
+        Me.Controls.Add(Me.DeleteTripButton)
+        Me.Controls.Add(Me.EditButton)
+        Me.Controls.Add(Me.XButton)
+        Me.Controls.Add(Me.StatusWindow)
         Me.Controls.Add(Me.CarControlsIcon)
         Me.Controls.Add(Me.ControlsButton)
         Me.Controls.Add(Me.MapIcon)
@@ -259,4 +326,9 @@ Partial Class RiderHomePage
     Friend WithEvents CarControlsIcon As PictureBox
     Friend WithEvents ControlsButton As Button
     Friend WithEvents ChatBtn As Button
+    Friend WithEvents StatusWindow As Label
+    Friend WithEvents XButton As Button
+    Friend WithEvents EditButton As Button
+    Friend WithEvents DeleteTripButton As Button
+    Friend WithEvents ViewTripStatusButton As Button
 End Class

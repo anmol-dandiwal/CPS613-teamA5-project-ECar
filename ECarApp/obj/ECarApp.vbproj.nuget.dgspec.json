@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "\\\\Mac\\Home\\Desktop\\cps616\\CPS613-teamA5-project-ECar\\ECarApp\\ECarApp.vbproj": {}
+    "C:\\Users\\miche\\source\\repos\\CPS613-teamA5-project-ECar\\ECarApp\\ECarApp.vbproj": {}
   },
   "projects": {
-    "\\\\Mac\\Home\\Desktop\\cps616\\CPS613-teamA5-project-ECar\\ECarApp\\ECarApp.vbproj": {
+    "C:\\Users\\miche\\source\\repos\\CPS613-teamA5-project-ECar\\ECarApp\\ECarApp.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "\\\\Mac\\Home\\Desktop\\cps616\\CPS613-teamA5-project-ECar\\ECarApp\\ECarApp.vbproj",
+        "projectUniqueName": "C:\\Users\\miche\\source\\repos\\CPS613-teamA5-project-ECar\\ECarApp\\ECarApp.vbproj",
         "projectName": "ECarApp",
-        "projectPath": "\\\\Mac\\Home\\Desktop\\cps616\\CPS613-teamA5-project-ECar\\ECarApp\\ECarApp.vbproj",
-        "packagesPath": "C:\\Users\\Mittson\\.nuget\\packages\\",
-        "outputPath": "\\\\Mac\\Home\\Desktop\\cps616\\CPS613-teamA5-project-ECar\\ECarApp\\obj\\",
+        "projectPath": "C:\\Users\\miche\\source\\repos\\CPS613-teamA5-project-ECar\\ECarApp\\ECarApp.vbproj",
+        "packagesPath": "C:\\Users\\miche\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\miche\\source\\repos\\CPS613-teamA5-project-ECar\\ECarApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Mittson\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\miche\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

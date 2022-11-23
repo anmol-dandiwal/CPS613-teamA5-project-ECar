@@ -1,4 +1,11 @@
 ﻿Public Class RiderHomePage
+    Private Sub RiderHomePage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If BookARidePage.isRideScheduled = False Then
+            EditButton.Hide()
+            DeleteTripButton.Hide()
+            ViewTripStatusButton.Hide()
+        End If
+    End Sub
     Private Sub RiderLabel_Click(sender As Object, e As EventArgs) Handles RiderLabel.Click
         sender.BackColor = Color.FromName("ControlDark")
         sender.ForeColor = Color.FromName("ControlLightLight")
@@ -56,4 +63,58 @@
 
     End Sub
 
+    Private Sub BookRideButton_Click(sender As Object, e As EventArgs) Handles BookRideButton.Click
+        BookARidePage.Show()
+    End Sub
+
+    Private Sub XButton_Click(sender As Object, e As EventArgs) Handles XButton.Click
+        If BookARidePage.isRideScheduled = True And BookARidePage.dateOfRide = Today.Date Then
+            StatusWindow.Text = "You currently do not have a ride scheduled.."
+        End If
+        BookARidePage.isRideScheduled = False
+        StatusWindow.Hide()
+        XButton.Hide()
+        EditButton.Hide()
+        DeleteTripButton.Hide()
+        ViewTripStatusButton.Show()
+
+    End Sub
+
+    Private Sub RiderHomePage_Shown(sender As Object, e As EventArgs) Handles Me.Activated
+        StatusWindow.Show()
+        XButton.Show()
+        If BookARidePage.isRideScheduled = True And BookARidePage.dateOfRide = Today.Date Then
+            StatusWindow.Text = "Your driver is arriving at your pick-up location." & vbCrLf & "Your ride to " & BookARidePage.destinationAddress & " is here."
+            EditButton.Hide()
+            DeleteTripButton.Hide()
+        ElseIf BookARidePage.isRideScheduled = True And BookARidePage.dateOfRide IsNot Today.ToString() Then
+            StatusWindow.Text = "Your ride to " & BookARidePage.destinationAddress & " is scheduled for: " & BookARidePage.dateOfRide & ". "
+            EditButton.Show()
+            DeleteTripButton.Show()
+        End If
+    End Sub
+    Private Sub DeleteTripButton_Click(sender As Object, e As EventArgs) Handles DeleteTripButton.Click
+        BookARidePage.isRideScheduled = False
+        StatusWindow.Text = "You currently do not have a ride scheduled."
+        EditButton.Hide()
+        DeleteTripButton.Hide()
+    End Sub
+    Private Sub EditTripButton_Click(sender As Object, e As EventArgs) Handles EditButton.Click
+        BookARidePage.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub ViewTripStatusButton_Click(sender As Object, e As EventArgs) Handles ViewTripStatusButton.Click
+        If StatusWindow.Text = "You currently do not have a ride scheduled." Then
+            EditButton.Hide()
+            DeleteTripButton.Hide()
+        Else
+            EditButton.Show()
+            DeleteTripButton.Show()
+        End If
+        StatusWindow.Show()
+        XButton.Show()
+        ViewTripStatusButton.Hide()
+
+    End Sub
 End Class

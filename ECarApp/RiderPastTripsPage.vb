@@ -1,6 +1,6 @@
 ﻿Imports System.Data.DataTable
 Public Class RiderPastTripsPage
-    Dim riderPastTrips As New DataTable("Table")
+    Public riderPastTrips As New DataTable("Table")
 
     Private Sub BackIcon_Click(sender As Object, e As EventArgs) Handles BackIcon.Click, BackButton.Click
         Me.Close()
@@ -14,11 +14,7 @@ Public Class RiderPastTripsPage
         RiderPastTripsLabel.Focus()
     End Sub
 
-    Private Sub PopulatePastTrips()
-        riderPastTrips.Columns.Add("Date")
-        riderPastTrips.Columns.Add("Cost")
-        riderPastTrips.Columns.Add("Distance")
-
+    Sub PopulatePastTrips()
         riderPastTrips.Rows.Add("May 19, 2019", "$10.23", "5KM")
         riderPastTrips.Rows.Add("Jan 29, 2019", "$12.49", "6KM")
         riderPastTrips.Rows.Add("May 05, 2016", "$6.23", "1KM")
@@ -33,18 +29,30 @@ Public Class RiderPastTripsPage
         riderPastTrips.Rows.Add("Oct 21, 2017", "$42.41", "44KM")
         riderPastTrips.Rows.Add("Oct 13, 2017", "$13.99", "10KM")
 
-        RiderPastTripsTable.DataSource = riderPastTrips
     End Sub
 
     Private Sub PastTripsPage_Load(sender As Object, e As EventArgs) Handles Me.Load
-        PopulatePastTrips()
+        If riderPastTrips.Columns.Contains("Date") Then
+            PopulatePastTrips()
+        Else
+            setUpTable()
+            PopulatePastTrips()
+        End If
     End Sub
 
     Private Sub showRoute() Handles RiderPastTripsTable.CellContentDoubleClick
         showRouteWindow.Show()
     End Sub
 
+    Sub setUpTable()
+        If Not riderPastTrips.Columns.Contains("Date") Then
+            riderPastTrips.Columns.Add("Date")
+            riderPastTrips.Columns.Add("Cost")
+            riderPastTrips.Columns.Add("Distance")
+        End If
+        RiderPastTripsTable.DataSource = riderPastTrips
 
+    End Sub
 
 
 End Class
