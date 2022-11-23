@@ -1,8 +1,14 @@
 ﻿Imports System.Security.Authentication.ExtendedProtection
 
 Public Class HomePage
+    Dim intrusionAlert = False
     Private Sub ScheduleButton_Click(sender As Object, e As EventArgs) Handles ScheduleButton.Click, CalendarIcon.Click
-        SchedulePage.Show()
+        If Not intrusionAlert Then
+            IntrusionDialog.ShowDialog()
+            intrusionAlert = True
+        Else
+            SchedulePage.Show()
+        End If
     End Sub
 
     Private Sub UserIcon_Click(sender As Object, e As EventArgs) Handles UserIcon.Click

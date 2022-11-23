@@ -22,6 +22,7 @@ Partial Class HomePage
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(HomePage))
         Me.UserIcon = New System.Windows.Forms.PictureBox()
         Me.CarPicture = New System.Windows.Forms.PictureBox()
@@ -38,6 +39,7 @@ Partial Class HomePage
         Me.SwapIcon = New System.Windows.Forms.PictureBox()
         Me.RiderLabel = New System.Windows.Forms.Label()
         Me.OwnerLabel = New System.Windows.Forms.Label()
+        Me.IntrusionAlertPopUp = New System.Windows.Forms.ErrorProvider(Me.components)
         CType(Me.UserIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CarPicture, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BatteryIcon, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -45,6 +47,7 @@ Partial Class HomePage
         CType(Me.HistoryIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MapIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SwapIcon, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.IntrusionAlertPopUp, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'UserIcon
@@ -231,6 +234,10 @@ Partial Class HomePage
         Me.OwnerLabel.TabIndex = 13
         Me.OwnerLabel.Text = "Owner"
         '
+        'IntrusionAlertPopUp
+        '
+        Me.IntrusionAlertPopUp.ContainerControl = Me
+        '
         'HomePage
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
@@ -262,6 +269,7 @@ Partial Class HomePage
         CType(Me.HistoryIcon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MapIcon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SwapIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.IntrusionAlertPopUp, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -282,4 +290,5 @@ Partial Class HomePage
     Friend WithEvents SwapIcon As PictureBox
     Friend WithEvents RiderLabel As Label
     Friend WithEvents OwnerLabel As Label
+    Friend WithEvents IntrusionAlertPopUp As ErrorProvider
 End Class
