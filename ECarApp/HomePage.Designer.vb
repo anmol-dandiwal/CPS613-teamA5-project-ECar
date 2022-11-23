@@ -177,7 +177,7 @@ Partial Class HomePage
         '
         Me.HistoryIcon.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.HistoryIcon.Image = CType(resources.GetObject("HistoryIcon.Image"), System.Drawing.Image)
-        Me.HistoryIcon.Location = New System.Drawing.Point(257, 571)
+        Me.HistoryIcon.Location = New System.Drawing.Point(251, 572)
         Me.HistoryIcon.Margin = New System.Windows.Forms.Padding(4)
         Me.HistoryIcon.Name = "HistoryIcon"
         Me.HistoryIcon.Size = New System.Drawing.Size(54, 54)
