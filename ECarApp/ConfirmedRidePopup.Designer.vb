@@ -28,6 +28,7 @@ Partial Class ConfirmedRidePopup
         '
         'Button1
         '
+        Me.Button1.Font = New System.Drawing.Font("Eras Medium ITC", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Button1.Location = New System.Drawing.Point(112, 192)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(159, 45)
@@ -37,7 +38,7 @@ Partial Class ConfirmedRidePopup
         '
         'ConfirmedRideMessage
         '
-        Me.ConfirmedRideMessage.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ConfirmedRideMessage.Font = New System.Drawing.Font("Eras Medium ITC", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ConfirmedRideMessage.Location = New System.Drawing.Point(21, 19)
         Me.ConfirmedRideMessage.Name = "ConfirmedRideMessage"
         Me.ConfirmedRideMessage.Size = New System.Drawing.Size(337, 148)

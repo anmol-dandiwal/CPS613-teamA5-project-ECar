@@ -55,12 +55,12 @@ Partial Class CarControlsPage
         'CarControlsLabel
         '
         Me.CarControlsLabel.AutoSize = True
-        Me.CarControlsLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.CarControlsLabel.Font = New System.Drawing.Font("Eras Medium ITC", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.CarControlsLabel.ForeColor = System.Drawing.SystemColors.ControlText
         Me.CarControlsLabel.Location = New System.Drawing.Point(103, 26)
         Me.CarControlsLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.CarControlsLabel.Name = "CarControlsLabel"
-        Me.CarControlsLabel.Size = New System.Drawing.Size(182, 36)
+        Me.CarControlsLabel.Size = New System.Drawing.Size(171, 32)
         Me.CarControlsLabel.TabIndex = 13
         Me.CarControlsLabel.Text = "Car Controls"
         '
@@ -91,10 +91,10 @@ Partial Class CarControlsPage
         'OutsideTempLabel
         '
         Me.OutsideTempLabel.AutoSize = True
-        Me.OutsideTempLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.OutsideTempLabel.Font = New System.Drawing.Font("Eras Medium ITC", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.OutsideTempLabel.Location = New System.Drawing.Point(27, 93)
         Me.OutsideTempLabel.Name = "OutsideTempLabel"
-        Me.OutsideTempLabel.Size = New System.Drawing.Size(192, 21)
+        Me.OutsideTempLabel.Size = New System.Drawing.Size(215, 19)
         Me.OutsideTempLabel.TabIndex = 14
         Me.OutsideTempLabel.Text = "Outside Temperature: 5 º"
         Me.OutsideTempLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -102,30 +102,30 @@ Partial Class CarControlsPage
         'IntakeTempLabel
         '
         Me.IntakeTempLabel.AutoSize = True
-        Me.IntakeTempLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.IntakeTempLabel.Font = New System.Drawing.Font("Eras Medium ITC", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.IntakeTempLabel.Location = New System.Drawing.Point(27, 114)
         Me.IntakeTempLabel.Name = "IntakeTempLabel"
-        Me.IntakeTempLabel.Size = New System.Drawing.Size(189, 21)
+        Me.IntakeTempLabel.Size = New System.Drawing.Size(212, 19)
         Me.IntakeTempLabel.TabIndex = 16
         Me.IntakeTempLabel.Text = "Intake Temperature: 20 º"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label4.Font = New System.Drawing.Font("Eras Medium ITC", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label4.Location = New System.Drawing.Point(141, 278)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(85, 21)
+        Me.Label4.Size = New System.Drawing.Size(95, 19)
         Me.Label4.TabIndex = 17
         Me.Label4.Text = "Fan Speed"
         '
         'WindowsLabel
         '
         Me.WindowsLabel.AutoSize = True
-        Me.WindowsLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.WindowsLabel.Font = New System.Drawing.Font("Eras Medium ITC", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.WindowsLabel.Location = New System.Drawing.Point(112, 379)
         Me.WindowsLabel.Name = "WindowsLabel"
-        Me.WindowsLabel.Size = New System.Drawing.Size(143, 21)
+        Me.WindowsLabel.Size = New System.Drawing.Size(160, 19)
         Me.WindowsLabel.TabIndex = 18
         Me.WindowsLabel.Text = "Windows: CLOSED"
         Me.WindowsLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -133,10 +133,10 @@ Partial Class CarControlsPage
         'TrunkLabel
         '
         Me.TrunkLabel.AutoSize = True
-        Me.TrunkLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.TrunkLabel.Font = New System.Drawing.Font("Eras Medium ITC", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.TrunkLabel.Location = New System.Drawing.Point(125, 460)
         Me.TrunkLabel.Name = "TrunkLabel"
-        Me.TrunkLabel.Size = New System.Drawing.Size(117, 21)
+        Me.TrunkLabel.Size = New System.Drawing.Size(132, 19)
         Me.TrunkLabel.TabIndex = 19
         Me.TrunkLabel.Text = "Trunk: CLOSED"
         Me.TrunkLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -144,10 +144,10 @@ Partial Class CarControlsPage
         'Temp
         '
         Me.Temp.AutoSize = True
-        Me.Temp.Font = New System.Drawing.Font("Segoe UI", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Temp.Location = New System.Drawing.Point(157, 202)
+        Me.Temp.Font = New System.Drawing.Font("Eras Medium ITC", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Temp.Location = New System.Drawing.Point(160, 211)
         Me.Temp.Name = "Temp"
-        Me.Temp.Size = New System.Drawing.Size(56, 45)
+        Me.Temp.Size = New System.Drawing.Size(53, 36)
         Me.Temp.TabIndex = 20
         Me.Temp.Text = "20"
         '
@@ -202,10 +202,10 @@ Partial Class CarControlsPage
         'FanSpeed
         '
         Me.FanSpeed.AutoSize = True
-        Me.FanSpeed.Font = New System.Drawing.Font("Segoe UI", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.FanSpeed.Location = New System.Drawing.Point(166, 299)
+        Me.FanSpeed.Font = New System.Drawing.Font("Eras Medium ITC", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.FanSpeed.Location = New System.Drawing.Point(170, 308)
         Me.FanSpeed.Name = "FanSpeed"
-        Me.FanSpeed.Size = New System.Drawing.Size(38, 45)
+        Me.FanSpeed.Size = New System.Drawing.Size(34, 36)
         Me.FanSpeed.TabIndex = 20
         Me.FanSpeed.Text = "1"
         Me.FanSpeed.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -213,17 +213,19 @@ Partial Class CarControlsPage
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.Label8.Font = New System.Drawing.Font("Eras Medium ITC", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.Label8.Location = New System.Drawing.Point(103, 172)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(148, 21)
+        Me.Label8.Size = New System.Drawing.Size(166, 19)
         Me.Label8.TabIndex = 17
         Me.Label8.Text = "Cabin Temperature"
         '
         'windowsBtn
         '
+        Me.windowsBtn.Font = New System.Drawing.Font("Eras Medium ITC", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.windowsBtn.Location = New System.Drawing.Point(90, 403)
         Me.windowsBtn.Name = "windowsBtn"
+        Me.windowsBtn.Padding = New System.Windows.Forms.Padding(0, 5, 0, 0)
         Me.windowsBtn.Size = New System.Drawing.Size(195, 45)
         Me.windowsBtn.TabIndex = 21
         Me.windowsBtn.Text = "Open/Close Windows"
@@ -231,6 +233,7 @@ Partial Class CarControlsPage
         '
         'TrunkBtn
         '
+        Me.TrunkBtn.Font = New System.Drawing.Font("Eras Medium ITC", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.TrunkBtn.Location = New System.Drawing.Point(90, 484)
         Me.TrunkBtn.Name = "TrunkBtn"
         Me.TrunkBtn.Size = New System.Drawing.Size(195, 45)
@@ -241,16 +244,17 @@ Partial Class CarControlsPage
         'HeatedSeatsLabel
         '
         Me.HeatedSeatsLabel.AutoSize = True
-        Me.HeatedSeatsLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.HeatedSeatsLabel.Font = New System.Drawing.Font("Eras Medium ITC", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.HeatedSeatsLabel.Location = New System.Drawing.Point(112, 546)
         Me.HeatedSeatsLabel.Name = "HeatedSeatsLabel"
-        Me.HeatedSeatsLabel.Size = New System.Drawing.Size(143, 21)
+        Me.HeatedSeatsLabel.Size = New System.Drawing.Size(160, 19)
         Me.HeatedSeatsLabel.TabIndex = 19
         Me.HeatedSeatsLabel.Text = "Heated Seats: OFF"
         Me.HeatedSeatsLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'HeatedSeatsBtn
         '
+        Me.HeatedSeatsBtn.Font = New System.Drawing.Font("Eras Medium ITC", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.HeatedSeatsBtn.Location = New System.Drawing.Point(90, 570)
         Me.HeatedSeatsBtn.Name = "HeatedSeatsBtn"
         Me.HeatedSeatsBtn.Size = New System.Drawing.Size(195, 45)
@@ -261,16 +265,17 @@ Partial Class CarControlsPage
         'DefrostLabel
         '
         Me.DefrostLabel.AutoSize = True
-        Me.DefrostLabel.Font = New System.Drawing.Font("Segoe UI Semibold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.DefrostLabel.Font = New System.Drawing.Font("Eras Medium ITC", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.DefrostLabel.Location = New System.Drawing.Point(141, 633)
         Me.DefrostLabel.Name = "DefrostLabel"
-        Me.DefrostLabel.Size = New System.Drawing.Size(101, 21)
+        Me.DefrostLabel.Size = New System.Drawing.Size(112, 19)
         Me.DefrostLabel.TabIndex = 19
         Me.DefrostLabel.Text = "Defrost: OFF"
         Me.DefrostLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'DefrostBtn
         '
+        Me.DefrostBtn.Font = New System.Drawing.Font("Eras Medium ITC", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.DefrostBtn.Location = New System.Drawing.Point(90, 657)
         Me.DefrostBtn.Name = "DefrostBtn"
         Me.DefrostBtn.Size = New System.Drawing.Size(195, 45)
@@ -282,7 +287,7 @@ Partial Class CarControlsPage
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.Location = New System.Drawing.Point(219, 202)
+        Me.Label1.Location = New System.Drawing.Point(203, 211)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(21, 25)
         Me.Label1.TabIndex = 20

@@ -62,7 +62,7 @@ Partial Class RiderHomePage
         'RiderLabel
         '
         Me.RiderLabel.BackColor = System.Drawing.SystemColors.ControlDark
-        Me.RiderLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.RiderLabel.Font = New System.Drawing.Font("Eras Medium ITC", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.RiderLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.RiderLabel.Location = New System.Drawing.Point(224, 18)
         Me.RiderLabel.Name = "RiderLabel"
@@ -75,11 +75,11 @@ Partial Class RiderHomePage
         '
         Me.OwnerLabel.AutoSize = True
         Me.OwnerLabel.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.OwnerLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.OwnerLabel.Font = New System.Drawing.Font("Eras Medium ITC", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.OwnerLabel.ForeColor = System.Drawing.SystemColors.ControlText
         Me.OwnerLabel.Location = New System.Drawing.Point(81, 18)
         Me.OwnerLabel.Name = "OwnerLabel"
-        Me.OwnerLabel.Size = New System.Drawing.Size(85, 29)
+        Me.OwnerLabel.Size = New System.Drawing.Size(86, 27)
         Me.OwnerLabel.TabIndex = 17
         Me.OwnerLabel.Text = "Owner"
         '
@@ -98,7 +98,7 @@ Partial Class RiderHomePage
         '
         Me.MapButton.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.MapButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.MapButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.MapButton.Font = New System.Drawing.Font("Eras Medium ITC", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.MapButton.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.MapButton.Location = New System.Drawing.Point(27, 538)
         Me.MapButton.Margin = New System.Windows.Forms.Padding(6)
@@ -114,7 +114,7 @@ Partial Class RiderHomePage
         '
         Me.pastTripButton.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.pastTripButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.pastTripButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.pastTripButton.Font = New System.Drawing.Font("Eras Medium ITC", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.pastTripButton.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.pastTripButton.Location = New System.Drawing.Point(27, 438)
         Me.pastTripButton.Margin = New System.Windows.Forms.Padding(6)
@@ -129,7 +129,7 @@ Partial Class RiderHomePage
         '
         Me.BookRideButton.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.BookRideButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.BookRideButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.BookRideButton.Font = New System.Drawing.Font("Eras Medium ITC", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.BookRideButton.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.BookRideButton.Location = New System.Drawing.Point(27, 338)
         Me.BookRideButton.Margin = New System.Windows.Forms.Padding(6)
@@ -179,7 +179,7 @@ Partial Class RiderHomePage
         'CarControlsIcon
         '
         Me.CarControlsIcon.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.CarControlsIcon.Image = CType(resources.GetObject("CarControlsIcon.Image"), System.Drawing.Image)
+        Me.CarControlsIcon.Image = Global.ECarApp.My.Resources.Resources.SlidersIcon
         Me.CarControlsIcon.Location = New System.Drawing.Point(311, 460)
         Me.CarControlsIcon.Margin = New System.Windows.Forms.Padding(4)
         Me.CarControlsIcon.Name = "CarControlsIcon"
@@ -192,7 +192,7 @@ Partial Class RiderHomePage
         '
         Me.ControlsButton.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.ControlsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ControlsButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ControlsButton.Font = New System.Drawing.Font("Eras Medium ITC", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ControlsButton.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.ControlsButton.Location = New System.Drawing.Point(194, 438)
         Me.ControlsButton.Margin = New System.Windows.Forms.Padding(6)
@@ -207,7 +207,7 @@ Partial Class RiderHomePage
         '
         Me.ChatBtn.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.ChatBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.ChatBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ChatBtn.Font = New System.Drawing.Font("Eras Medium ITC", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ChatBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.ChatBtn.Location = New System.Drawing.Point(27, 638)
         Me.ChatBtn.Margin = New System.Windows.Forms.Padding(6)
@@ -222,7 +222,7 @@ Partial Class RiderHomePage
         'StatusWindow
         '
         Me.StatusWindow.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.StatusWindow.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.StatusWindow.Font = New System.Drawing.Font("Eras Medium ITC", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.StatusWindow.Location = New System.Drawing.Point(17, 72)
         Me.StatusWindow.Name = "StatusWindow"
         Me.StatusWindow.Size = New System.Drawing.Size(342, 147)
@@ -243,7 +243,9 @@ Partial Class RiderHomePage
         'EditButton
         '
         Me.EditButton.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.EditButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.EditButton.FlatAppearance.BorderSize = 0
+        Me.EditButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.EditButton.Font = New System.Drawing.Font("Eras Medium ITC", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.EditButton.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.EditButton.Location = New System.Drawing.Point(27, 232)
         Me.EditButton.Name = "EditButton"
@@ -255,7 +257,9 @@ Partial Class RiderHomePage
         'DeleteTripButton
         '
         Me.DeleteTripButton.BackColor = System.Drawing.Color.Firebrick
-        Me.DeleteTripButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.DeleteTripButton.FlatAppearance.BorderSize = 0
+        Me.DeleteTripButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.DeleteTripButton.Font = New System.Drawing.Font("Eras Medium ITC", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.DeleteTripButton.ForeColor = System.Drawing.SystemColors.ControlLight
         Me.DeleteTripButton.Location = New System.Drawing.Point(198, 232)
         Me.DeleteTripButton.Name = "DeleteTripButton"
@@ -267,13 +271,17 @@ Partial Class RiderHomePage
         'ViewTripStatusButton
         '
         Me.ViewTripStatusButton.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.ViewTripStatusButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ViewTripStatusButton.FlatAppearance.BorderSize = 0
+        Me.ViewTripStatusButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ViewTripStatusButton.Font = New System.Drawing.Font("Eras Medium ITC", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ViewTripStatusButton.ForeColor = System.Drawing.SystemColors.ControlLight
         Me.ViewTripStatusButton.Location = New System.Drawing.Point(109, 72)
         Me.ViewTripStatusButton.Name = "ViewTripStatusButton"
+        Me.ViewTripStatusButton.Padding = New System.Windows.Forms.Padding(0, 3, 0, 0)
         Me.ViewTripStatusButton.Size = New System.Drawing.Size(161, 42)
         Me.ViewTripStatusButton.TabIndex = 32
         Me.ViewTripStatusButton.Text = "View Trip Status"
+        Me.ViewTripStatusButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         Me.ViewTripStatusButton.UseVisualStyleBackColor = False
         '
         'RiderHomePage

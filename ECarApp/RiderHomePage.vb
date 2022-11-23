@@ -14,10 +14,11 @@
     End Sub
 
     Private Sub OwnerLabel_Click(sender As Object, e As EventArgs) Handles OwnerLabel.Click
-        sender.BackColor = Color.FromName("ControlDark")
-        sender.ForeColor = Color.FromName("ControlLightLight")
-        RiderLabel.BackColor = Color.FromName("ControlLight")
-        RiderLabel.ForeColor = Color.FromName("ControlText")
+        If (OwnerLabel.BackColor = Color.FromName("ControlLight")) Then
+            RiderLabel_Click(RiderLabel, e)
+            Me.Hide()
+            HomePage.Show()
+        End If
     End Sub
 
     Private Sub SwapIcon_Click(sender As Object, e As EventArgs) Handles SwapIcon.Click
@@ -84,7 +85,7 @@
         StatusWindow.Show()
         XButton.Show()
         If BookARidePage.isRideScheduled = True And BookARidePage.dateOfRide = Today.Date Then
-            StatusWindow.Text = "Your driver is arriving at your pick-up location." & vbCrLf & "Your ride to " & BookARidePage.destinationAddress & " is here."
+            StatusWindow.Text = "Your driver is arriving at your pick-up location." & vbCrLf & vbCrLf & "Your ride to " & BookARidePage.destinationAddress & " is here."
             EditButton.Hide()
             DeleteTripButton.Hide()
         ElseIf BookARidePage.isRideScheduled = True And BookARidePage.dateOfRide IsNot Today.ToString() Then

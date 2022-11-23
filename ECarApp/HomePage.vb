@@ -37,17 +37,10 @@ Public Class HomePage
     End Sub
 
     Private Sub RiderLabel_Click(sender As Object, e As EventArgs) Handles RiderLabel.Click
-        sender.BackColor = Color.FromName("ControlDark")
-        sender.ForeColor = Color.FromName("ControlLightLight")
-        OwnerLabel.BackColor = Color.FromName("ControlLight")
-        OwnerLabel.ForeColor = Color.FromName("ControlText")
-    End Sub
-
-    Private Sub OwnerLabel_Click(sender As Object, e As EventArgs) Handles OwnerLabel.Click
-        sender.BackColor = Color.FromName("ControlDark")
-        sender.ForeColor = Color.FromName("ControlLightLight")
-        RiderLabel.BackColor = Color.FromName("ControlLight")
-        RiderLabel.ForeColor = Color.FromName("ControlText")
+        If (RiderLabel.BackColor = Color.FromName("ControlLight")) Then
+            Me.Hide()
+            RiderHomePage.Show()
+        End If
     End Sub
 
     Private Sub SwapIcon_Click(sender As Object, e As EventArgs) Handles SwapIcon.Click

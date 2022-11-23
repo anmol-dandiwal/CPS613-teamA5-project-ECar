@@ -36,29 +36,30 @@ Partial Class BookARidePage
         'FromLabel
         '
         Me.FromLabel.AutoSize = True
-        Me.FromLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.FromLabel.Location = New System.Drawing.Point(12, 77)
+        Me.FromLabel.Font = New System.Drawing.Font("Eras Medium ITC", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.FromLabel.Location = New System.Drawing.Point(10, 72)
         Me.FromLabel.Name = "FromLabel"
-        Me.FromLabel.Size = New System.Drawing.Size(50, 20)
+        Me.FromLabel.Size = New System.Drawing.Size(51, 19)
         Me.FromLabel.TabIndex = 0
         Me.FromLabel.Text = "From:"
         '
         'DestinationLabel
         '
         Me.DestinationLabel.AutoSize = True
-        Me.DestinationLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.DestinationLabel.Location = New System.Drawing.Point(12, 107)
+        Me.DestinationLabel.Font = New System.Drawing.Font("Eras Medium ITC", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.DestinationLabel.Location = New System.Drawing.Point(10, 100)
         Me.DestinationLabel.Name = "DestinationLabel"
-        Me.DestinationLabel.Size = New System.Drawing.Size(94, 20)
+        Me.DestinationLabel.Size = New System.Drawing.Size(96, 19)
         Me.DestinationLabel.TabIndex = 1
         Me.DestinationLabel.Text = "Destination:"
         '
         'ScheduleNowButton
         '
         Me.ScheduleNowButton.AutoSize = True
-        Me.ScheduleNowButton.Location = New System.Drawing.Point(62, 16)
+        Me.ScheduleNowButton.Font = New System.Drawing.Font("Eras Medium ITC", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ScheduleNowButton.Location = New System.Drawing.Point(13, 21)
         Me.ScheduleNowButton.Name = "ScheduleNowButton"
-        Me.ScheduleNowButton.Size = New System.Drawing.Size(101, 19)
+        Me.ScheduleNowButton.Size = New System.Drawing.Size(133, 23)
         Me.ScheduleNowButton.TabIndex = 2
         Me.ScheduleNowButton.Text = "Schedule Now"
         Me.ScheduleNowButton.UseVisualStyleBackColor = True
@@ -66,62 +67,66 @@ Partial Class BookARidePage
         'ScheduleLaterButton
         '
         Me.ScheduleLaterButton.AutoSize = True
-        Me.ScheduleLaterButton.Location = New System.Drawing.Point(200, 16)
+        Me.ScheduleLaterButton.Font = New System.Drawing.Font("Eras Medium ITC", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ScheduleLaterButton.Location = New System.Drawing.Point(178, 21)
         Me.ScheduleLaterButton.Name = "ScheduleLaterButton"
-        Me.ScheduleLaterButton.Size = New System.Drawing.Size(102, 19)
+        Me.ScheduleLaterButton.Size = New System.Drawing.Size(136, 23)
         Me.ScheduleLaterButton.TabIndex = 3
         Me.ScheduleLaterButton.Text = "Schedule Later"
         Me.ScheduleLaterButton.UseVisualStyleBackColor = True
         '
         'FromAddressInput
         '
-        Me.FromAddressInput.Location = New System.Drawing.Point(68, 75)
+        Me.FromAddressInput.Location = New System.Drawing.Point(59, 71)
         Me.FromAddressInput.Name = "FromAddressInput"
-        Me.FromAddressInput.Size = New System.Drawing.Size(281, 23)
+        Me.FromAddressInput.Size = New System.Drawing.Size(255, 20)
         Me.FromAddressInput.TabIndex = 4
         '
         'DestinationAddressInput
         '
-        Me.DestinationAddressInput.Location = New System.Drawing.Point(111, 107)
+        Me.DestinationAddressInput.Location = New System.Drawing.Point(103, 101)
         Me.DestinationAddressInput.Name = "DestinationAddressInput"
-        Me.DestinationAddressInput.Size = New System.Drawing.Size(237, 23)
+        Me.DestinationAddressInput.Size = New System.Drawing.Size(211, 20)
         Me.DestinationAddressInput.TabIndex = 5
         '
         'DatePickerInput
         '
-        Me.DatePickerInput.Location = New System.Drawing.Point(15, 151)
+        Me.DatePickerInput.Location = New System.Drawing.Point(13, 141)
         Me.DatePickerInput.Name = "DatePickerInput"
-        Me.DatePickerInput.Size = New System.Drawing.Size(336, 23)
+        Me.DatePickerInput.Size = New System.Drawing.Size(289, 20)
         Me.DatePickerInput.TabIndex = 6
         '
         'ConfirmButton
         '
         Me.ConfirmButton.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.ConfirmButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ConfirmButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ConfirmButton.Font = New System.Drawing.Font("Eras Medium ITC", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ConfirmButton.ForeColor = System.Drawing.SystemColors.ControlLight
-        Me.ConfirmButton.Location = New System.Drawing.Point(187, 196)
+        Me.ConfirmButton.Location = New System.Drawing.Point(160, 183)
         Me.ConfirmButton.Name = "ConfirmButton"
-        Me.ConfirmButton.Size = New System.Drawing.Size(166, 45)
+        Me.ConfirmButton.Size = New System.Drawing.Size(142, 42)
         Me.ConfirmButton.TabIndex = 7
-        Me.ConfirmButton.Text = "Confirm Ride"
+        Me.ConfirmButton.Text = "Confirm"
         Me.ConfirmButton.UseVisualStyleBackColor = False
         '
         'CancelButton
         '
         Me.CancelButton.BackColor = System.Drawing.SystemColors.ControlLight
-        Me.CancelButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.CancelButton.Location = New System.Drawing.Point(15, 196)
+        Me.CancelButton.FlatAppearance.BorderSize = 0
+        Me.CancelButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.CancelButton.Font = New System.Drawing.Font("Eras Medium ITC", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.CancelButton.Location = New System.Drawing.Point(13, 183)
         Me.CancelButton.Name = "CancelButton"
-        Me.CancelButton.Size = New System.Drawing.Size(166, 45)
+        Me.CancelButton.Size = New System.Drawing.Size(142, 42)
         Me.CancelButton.TabIndex = 8
         Me.CancelButton.Text = "Cancel "
         Me.CancelButton.UseVisualStyleBackColor = False
         '
         'BookARidePage
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 14.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(380, 757)
+        Me.ClientSize = New System.Drawing.Size(326, 619)
         Me.Controls.Add(Me.CancelButton)
         Me.Controls.Add(Me.ConfirmButton)
         Me.Controls.Add(Me.DatePickerInput)
@@ -131,6 +136,7 @@ Partial Class BookARidePage
         Me.Controls.Add(Me.ScheduleNowButton)
         Me.Controls.Add(Me.DestinationLabel)
         Me.Controls.Add(Me.FromLabel)
+        Me.Font = New System.Drawing.Font("Eras Medium ITC", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Name = "BookARidePage"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "BookARidePage"

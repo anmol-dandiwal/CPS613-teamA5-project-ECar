@@ -34,10 +34,12 @@ Partial Class AccountPage
         Me.CarPicture = New System.Windows.Forms.PictureBox()
         Me.BankInfoHeader = New System.Windows.Forms.Label()
         Me.BankInfoLabel = New System.Windows.Forms.Label()
+        Me.BankEdit = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         CType(Me.BackIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SwapIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CarPicture, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BankEdit, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -162,14 +164,24 @@ Partial Class AccountPage
         Me.BankInfoLabel.Text = "12345" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "001" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "1234567890"
         Me.BankInfoLabel.TextAlign = System.Drawing.ContentAlignment.TopRight
         '
+        'BankEdit
+        '
+        Me.BankEdit.Image = CType(resources.GetObject("BankEdit.Image"), System.Drawing.Image)
+        Me.BankEdit.Location = New System.Drawing.Point(103, 469)
+        Me.BankEdit.Name = "BankEdit"
+        Me.BankEdit.Size = New System.Drawing.Size(28, 28)
+        Me.BankEdit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.BankEdit.TabIndex = 15
+        Me.BankEdit.TabStop = False
+        '
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(103, 469)
+        Me.PictureBox1.Location = New System.Drawing.Point(122, 113)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(28, 28)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 15
+        Me.PictureBox1.TabIndex = 16
         Me.PictureBox1.TabStop = False
         '
         'AccountPage
@@ -178,6 +190,7 @@ Partial Class AccountPage
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(380, 757)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.BankEdit)
         Me.Controls.Add(Me.BankInfoLabel)
         Me.Controls.Add(Me.BankInfoHeader)
         Me.Controls.Add(Me.CarPicture)
@@ -195,6 +208,7 @@ Partial Class AccountPage
         CType(Me.BackIcon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SwapIcon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CarPicture, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BankEdit, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -212,5 +226,6 @@ Partial Class AccountPage
     Friend WithEvents CarPicture As PictureBox
     Friend WithEvents BankInfoHeader As Label
     Friend WithEvents BankInfoLabel As Label
+    Friend WithEvents BankEdit As PictureBox
     Friend WithEvents PictureBox1 As PictureBox
 End Class
