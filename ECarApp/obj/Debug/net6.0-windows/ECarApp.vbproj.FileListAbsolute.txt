@@ -81,3 +81,4 @@ C:\Users\miche\Source\Repos\CPS613-teamA5-project-ECar\ECarApp\obj\Debug\net6.0-
 \\Mac\Home\Desktop\cps616\CPS613-teamA5-project-ECar\ECarApp\obj\Debug\net6.0-windows\ECarApp.pdb
 \\Mac\Home\Desktop\cps616\CPS613-teamA5-project-ECar\ECarApp\obj\Debug\net6.0-windows\ECarApp.genruntimeconfig.cache
 \\Mac\Home\Desktop\cps616\CPS613-teamA5-project-ECar\ECarApp\obj\Debug\net6.0-windows\ref\ECarApp.dll
+\\Mac\Home\Desktop\cps616\CPS613-teamA5-project-ECar\ECarApp\obj\Debug\net6.0-windows\ECarApp.CarControlsPage.resources
