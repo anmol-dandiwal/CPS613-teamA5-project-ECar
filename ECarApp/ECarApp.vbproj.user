@@ -5,7 +5,7 @@
     <Compile Update="AccountPage.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="DatePopUp.vb">
+    <Compile Update="CarControlsPage.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="PastTripsPage.vb">

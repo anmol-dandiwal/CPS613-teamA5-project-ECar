@@ -33,11 +33,14 @@ Partial Class RiderHomePage
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.HistoryIcon = New System.Windows.Forms.PictureBox()
         Me.MapIcon = New System.Windows.Forms.PictureBox()
+        Me.CarControlsIcon = New System.Windows.Forms.PictureBox()
+        Me.ControlsButton = New System.Windows.Forms.Button()
         CType(Me.SwapIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.UserIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.HistoryIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MapIcon, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CarControlsIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'SwapIcon
@@ -105,13 +108,13 @@ Partial Class RiderHomePage
         '
         Me.pastTripButton.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.pastTripButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.pastTripButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.pastTripButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.pastTripButton.ForeColor = System.Drawing.SystemColors.ControlLightLight
         Me.pastTripButton.Location = New System.Drawing.Point(27, 554)
         Me.pastTripButton.Margin = New System.Windows.Forms.Padding(6)
         Me.pastTripButton.Name = "pastTripButton"
         Me.pastTripButton.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.pastTripButton.Size = New System.Drawing.Size(325, 88)
+        Me.pastTripButton.Size = New System.Drawing.Size(158, 88)
         Me.pastTripButton.TabIndex = 21
         Me.pastTripButton.Text = "Trip History"
         Me.pastTripButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -148,10 +151,10 @@ Partial Class RiderHomePage
         '
         Me.HistoryIcon.BackColor = System.Drawing.SystemColors.ControlDarkDark
         Me.HistoryIcon.Image = CType(resources.GetObject("HistoryIcon.Image"), System.Drawing.Image)
-        Me.HistoryIcon.Location = New System.Drawing.Point(257, 571)
+        Me.HistoryIcon.Location = New System.Drawing.Point(28, 580)
         Me.HistoryIcon.Margin = New System.Windows.Forms.Padding(4)
         Me.HistoryIcon.Name = "HistoryIcon"
-        Me.HistoryIcon.Size = New System.Drawing.Size(54, 54)
+        Me.HistoryIcon.Size = New System.Drawing.Size(34, 37)
         Me.HistoryIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.HistoryIcon.TabIndex = 24
         Me.HistoryIcon.TabStop = False
@@ -168,11 +171,41 @@ Partial Class RiderHomePage
         Me.MapIcon.TabIndex = 25
         Me.MapIcon.TabStop = False
         '
+        'CarControlsIcon
+        '
+        Me.CarControlsIcon.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.CarControlsIcon.Image = CType(resources.GetObject("CarControlsIcon.Image"), System.Drawing.Image)
+        Me.CarControlsIcon.Location = New System.Drawing.Point(196, 580)
+        Me.CarControlsIcon.Margin = New System.Windows.Forms.Padding(4)
+        Me.CarControlsIcon.Name = "CarControlsIcon"
+        Me.CarControlsIcon.Size = New System.Drawing.Size(36, 41)
+        Me.CarControlsIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.CarControlsIcon.TabIndex = 27
+        Me.CarControlsIcon.TabStop = False
+        '
+        'ControlsButton
+        '
+        Me.ControlsButton.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.ControlsButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ControlsButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.ControlsButton.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.ControlsButton.Location = New System.Drawing.Point(194, 554)
+        Me.ControlsButton.Margin = New System.Windows.Forms.Padding(6)
+        Me.ControlsButton.Name = "ControlsButton"
+        Me.ControlsButton.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
+        Me.ControlsButton.Size = New System.Drawing.Size(158, 88)
+        Me.ControlsButton.TabIndex = 26
+        Me.ControlsButton.Text = "Car Controls"
+        Me.ControlsButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.ControlsButton.UseVisualStyleBackColor = False
+        '
         'RiderHomePage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(380, 757)
+        Me.Controls.Add(Me.CarControlsIcon)
+        Me.Controls.Add(Me.ControlsButton)
         Me.Controls.Add(Me.MapIcon)
         Me.Controls.Add(Me.HistoryIcon)
         Me.Controls.Add(Me.PictureBox1)
@@ -191,6 +224,7 @@ Partial Class RiderHomePage
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.HistoryIcon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MapIcon, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CarControlsIcon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -206,4 +240,6 @@ Partial Class RiderHomePage
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents HistoryIcon As PictureBox
     Friend WithEvents MapIcon As PictureBox
+    Friend WithEvents CarControlsIcon As PictureBox
+    Friend WithEvents ControlsButton As Button
 End Class

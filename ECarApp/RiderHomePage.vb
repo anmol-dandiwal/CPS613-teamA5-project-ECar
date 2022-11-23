@@ -35,4 +35,7 @@
         RiderPastTripsPage.Show()
     End Sub
 
+    Private Sub ControlsButton_Click(sender As Object, e As EventArgs) Handles ControlsButton.Click, CarControlsIcon.Click
+        CarControlsPage.Show()
+    End Sub
 End Class
