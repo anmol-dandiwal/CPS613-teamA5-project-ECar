@@ -27,6 +27,7 @@ Partial Class PastTripsPage
         Me.BackIcon = New System.Windows.Forms.PictureBox()
         Me.BackButton = New System.Windows.Forms.Button()
         Me.PastTripsTable = New System.Windows.Forms.DataGridView()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.BackIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PastTripsTable, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -74,7 +75,7 @@ Partial Class PastTripsPage
         Me.PastTripsTable.AllowUserToResizeColumns = False
         Me.PastTripsTable.AllowUserToResizeRows = False
         Me.PastTripsTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.PastTripsTable.Location = New System.Drawing.Point(25, 90)
+        Me.PastTripsTable.Location = New System.Drawing.Point(25, 113)
         Me.PastTripsTable.MultiSelect = False
         Me.PastTripsTable.Name = "PastTripsTable"
         Me.PastTripsTable.ReadOnly = True
@@ -84,11 +85,22 @@ Partial Class PastTripsPage
         Me.PastTripsTable.Size = New System.Drawing.Size(321, 632)
         Me.PastTripsTable.TabIndex = 7
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Eras Medium ITC", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Label1.Location = New System.Drawing.Point(85, 96)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(205, 14)
+        Me.Label1.TabIndex = 8
+        Me.Label1.Text = "Double click a cell to view route map."
+        '
         'PastTripsPage
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(380, 757)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PastTripsTable)
         Me.Controls.Add(Me.PastTripsLabel)
         Me.Controls.Add(Me.BackIcon)
@@ -107,4 +119,5 @@ Partial Class PastTripsPage
     Friend WithEvents BackIcon As PictureBox
     Friend WithEvents BackButton As Button
     Friend WithEvents PastTripsTable As DataGridView
+    Friend WithEvents Label1 As Label
 End Class

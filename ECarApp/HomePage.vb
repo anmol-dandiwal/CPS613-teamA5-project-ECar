@@ -64,20 +64,13 @@ Public Class HomePage
         If Not CollisionAlert Then
             CollisionDialog.ShowDialog()
             CollisionAlert = True
+        ElseIf Not newRideAlert Then
+            NewRideDialog.ShowDialog()
+            newRideAlert = True
         Else
             PastTripsPage.Show()
         End If
     End Sub
-
-    Private Sub MapButton_Click(sender As Object, e As EventArgs) Handles MapButton.Click
-        If Not newRideAlert Then
-            NewRideDialog.ShowDialog()
-            newRideAlert = True
-        Else
-            Me.Show()
-        End If
-    End Sub
-
     Private Sub TripStatusButton_Click(sender As Object, e As EventArgs) Handles TripStatusButton.Click
         NewRideDialog.Show()
         NewRideDialog.DeclineButton.Text = "Cancel this Ride."

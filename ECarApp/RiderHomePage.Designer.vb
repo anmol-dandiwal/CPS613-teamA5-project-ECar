@@ -26,13 +26,10 @@ Partial Class RiderHomePage
         Me.SwapIcon = New System.Windows.Forms.PictureBox()
         Me.RiderLabel = New System.Windows.Forms.Label()
         Me.OwnerLabel = New System.Windows.Forms.Label()
-        Me.UserIcon = New System.Windows.Forms.PictureBox()
-        Me.MapButton = New System.Windows.Forms.Button()
         Me.pastTripButton = New System.Windows.Forms.Button()
         Me.BookRideButton = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.HistoryIcon = New System.Windows.Forms.PictureBox()
-        Me.MapIcon = New System.Windows.Forms.PictureBox()
         Me.CarControlsIcon = New System.Windows.Forms.PictureBox()
         Me.ControlsButton = New System.Windows.Forms.Button()
         Me.ChatBtn = New System.Windows.Forms.Button()
@@ -42,10 +39,8 @@ Partial Class RiderHomePage
         Me.DeleteTripButton = New System.Windows.Forms.Button()
         Me.ViewTripStatusButton = New System.Windows.Forms.Button()
         CType(Me.SwapIcon, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.UserIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.HistoryIcon, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MapIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CarControlsIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -82,33 +77,6 @@ Partial Class RiderHomePage
         Me.OwnerLabel.Size = New System.Drawing.Size(86, 27)
         Me.OwnerLabel.TabIndex = 17
         Me.OwnerLabel.Text = "Owner"
-        '
-        'UserIcon
-        '
-        Me.UserIcon.Image = Global.ECarApp.My.Resources.Resources.settingUser
-        Me.UserIcon.Location = New System.Drawing.Point(9, 8)
-        Me.UserIcon.Margin = New System.Windows.Forms.Padding(6)
-        Me.UserIcon.Name = "UserIcon"
-        Me.UserIcon.Size = New System.Drawing.Size(46, 46)
-        Me.UserIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.UserIcon.TabIndex = 16
-        Me.UserIcon.TabStop = False
-        '
-        'MapButton
-        '
-        Me.MapButton.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.MapButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.MapButton.Font = New System.Drawing.Font("Eras Medium ITC", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.MapButton.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.MapButton.Location = New System.Drawing.Point(27, 538)
-        Me.MapButton.Margin = New System.Windows.Forms.Padding(6)
-        Me.MapButton.Name = "MapButton"
-        Me.MapButton.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.MapButton.Size = New System.Drawing.Size(325, 88)
-        Me.MapButton.TabIndex = 22
-        Me.MapButton.Text = "Map"
-        Me.MapButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.MapButton.UseVisualStyleBackColor = False
         '
         'pastTripButton
         '
@@ -164,18 +132,6 @@ Partial Class RiderHomePage
         Me.HistoryIcon.TabIndex = 24
         Me.HistoryIcon.TabStop = False
         '
-        'MapIcon
-        '
-        Me.MapIcon.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.MapIcon.Image = Global.ECarApp.My.Resources.Resources.MapIcon
-        Me.MapIcon.Location = New System.Drawing.Point(256, 552)
-        Me.MapIcon.Margin = New System.Windows.Forms.Padding(4)
-        Me.MapIcon.Name = "MapIcon"
-        Me.MapIcon.Size = New System.Drawing.Size(54, 54)
-        Me.MapIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.MapIcon.TabIndex = 25
-        Me.MapIcon.TabStop = False
-        '
         'CarControlsIcon
         '
         Me.CarControlsIcon.BackColor = System.Drawing.SystemColors.ControlDarkDark
@@ -209,7 +165,7 @@ Partial Class RiderHomePage
         Me.ChatBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.ChatBtn.Font = New System.Drawing.Font("Eras Medium ITC", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.ChatBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.ChatBtn.Location = New System.Drawing.Point(27, 638)
+        Me.ChatBtn.Location = New System.Drawing.Point(27, 538)
         Me.ChatBtn.Margin = New System.Windows.Forms.Padding(6)
         Me.ChatBtn.Name = "ChatBtn"
         Me.ChatBtn.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
@@ -296,25 +252,20 @@ Partial Class RiderHomePage
         Me.Controls.Add(Me.StatusWindow)
         Me.Controls.Add(Me.CarControlsIcon)
         Me.Controls.Add(Me.ControlsButton)
-        Me.Controls.Add(Me.MapIcon)
         Me.Controls.Add(Me.HistoryIcon)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.ChatBtn)
-        Me.Controls.Add(Me.MapButton)
         Me.Controls.Add(Me.pastTripButton)
         Me.Controls.Add(Me.BookRideButton)
         Me.Controls.Add(Me.SwapIcon)
         Me.Controls.Add(Me.RiderLabel)
         Me.Controls.Add(Me.OwnerLabel)
-        Me.Controls.Add(Me.UserIcon)
         Me.Name = "RiderHomePage"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "RiderHomePage"
         CType(Me.SwapIcon, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.UserIcon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.HistoryIcon, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MapIcon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CarControlsIcon, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -324,13 +275,10 @@ Partial Class RiderHomePage
     Friend WithEvents SwapIcon As PictureBox
     Friend WithEvents RiderLabel As Label
     Friend WithEvents OwnerLabel As Label
-    Friend WithEvents UserIcon As PictureBox
-    Friend WithEvents MapButton As Button
     Friend WithEvents pastTripButton As Button
     Friend WithEvents BookRideButton As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents HistoryIcon As PictureBox
-    Friend WithEvents MapIcon As PictureBox
     Friend WithEvents CarControlsIcon As PictureBox
     Friend WithEvents ControlsButton As Button
     Friend WithEvents ChatBtn As Button

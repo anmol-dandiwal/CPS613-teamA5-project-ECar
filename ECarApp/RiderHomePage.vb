@@ -70,7 +70,7 @@
 
     Private Sub XButton_Click(sender As Object, e As EventArgs) Handles XButton.Click
         If BookARidePage.isRideScheduled = True And BookARidePage.dateOfRide = Today.Date Then
-            StatusWindow.Text = "You currently do not have a ride scheduled.."
+            StatusWindow.Text = "You currently do not have a ride scheduled."
         End If
         BookARidePage.isRideScheduled = False
         StatusWindow.Hide()
