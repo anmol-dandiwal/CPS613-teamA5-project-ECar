@@ -1,11 +1,12 @@
 ﻿Imports System.Security.Authentication.ExtendedProtection
 
 Public Class HomePage
-    Dim intrusionAlert = False
+    Dim IntrusionAlert = False
+    Dim CollisionAlert = False
     Private Sub ScheduleButton_Click(sender As Object, e As EventArgs) Handles ScheduleButton.Click, CalendarIcon.Click
-        If Not intrusionAlert Then
+        If Not IntrusionAlert Then
             IntrusionDialog.ShowDialog()
-            intrusionAlert = True
+            IntrusionAlert = True
         Else
             SchedulePage.Show()
         End If
@@ -55,7 +56,12 @@ Public Class HomePage
         sender.Location = New Point(sender.Location.X + 2.5, sender.Location.Y + 2.5)
     End Sub
 
-    Private Sub pastTripButton_Click(sender As Object, e As EventArgs) Handles pastTripButton.Click, HistoryIcon.Click
-        PastTripsPage.Show()
+    Private Sub TripHistoryButton_Click(sender As Object, e As EventArgs) Handles TripHistoryButton.Click, HistoryIcon.Click
+        If Not CollisionAlert Then
+            CollisionDialog.ShowDialog()
+            CollisionAlert = True
+        Else
+            PastTripsPage.Show()
+        End If
     End Sub
 End Class

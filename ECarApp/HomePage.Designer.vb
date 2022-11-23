@@ -27,7 +27,7 @@ Partial Class HomePage
         Me.UserIcon = New System.Windows.Forms.PictureBox()
         Me.CarPicture = New System.Windows.Forms.PictureBox()
         Me.ScheduleButton = New System.Windows.Forms.Button()
-        Me.pastTripButton = New System.Windows.Forms.Button()
+        Me.TripHistoryButton = New System.Windows.Forms.Button()
         Me.MapButton = New System.Windows.Forms.Button()
         Me.BatteryLabel = New System.Windows.Forms.Label()
         Me.BatteryIcon = New System.Windows.Forms.PictureBox()
@@ -88,21 +88,21 @@ Partial Class HomePage
         Me.ScheduleButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.ScheduleButton.UseVisualStyleBackColor = False
         '
-        'pastTripButton
+        'TripHistoryButton
         '
-        Me.pastTripButton.BackColor = System.Drawing.SystemColors.ControlDarkDark
-        Me.pastTripButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.pastTripButton.Font = New System.Drawing.Font("Eras Medium ITC", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.pastTripButton.ForeColor = System.Drawing.SystemColors.ControlLightLight
-        Me.pastTripButton.Location = New System.Drawing.Point(27, 554)
-        Me.pastTripButton.Margin = New System.Windows.Forms.Padding(6)
-        Me.pastTripButton.Name = "pastTripButton"
-        Me.pastTripButton.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
-        Me.pastTripButton.Size = New System.Drawing.Size(325, 88)
-        Me.pastTripButton.TabIndex = 3
-        Me.pastTripButton.Text = "Trip History"
-        Me.pastTripButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.pastTripButton.UseVisualStyleBackColor = False
+        Me.TripHistoryButton.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.TripHistoryButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.TripHistoryButton.Font = New System.Drawing.Font("Eras Medium ITC", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.TripHistoryButton.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.TripHistoryButton.Location = New System.Drawing.Point(27, 554)
+        Me.TripHistoryButton.Margin = New System.Windows.Forms.Padding(6)
+        Me.TripHistoryButton.Name = "TripHistoryButton"
+        Me.TripHistoryButton.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
+        Me.TripHistoryButton.Size = New System.Drawing.Size(325, 88)
+        Me.TripHistoryButton.TabIndex = 3
+        Me.TripHistoryButton.Text = "Trip History"
+        Me.TripHistoryButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.TripHistoryButton.UseVisualStyleBackColor = False
         '
         'MapButton
         '
@@ -254,7 +254,7 @@ Partial Class HomePage
         Me.Controls.Add(Me.BatteryIcon)
         Me.Controls.Add(Me.BatteryLabel)
         Me.Controls.Add(Me.MapButton)
-        Me.Controls.Add(Me.pastTripButton)
+        Me.Controls.Add(Me.TripHistoryButton)
         Me.Controls.Add(Me.ScheduleButton)
         Me.Controls.Add(Me.CarPicture)
         Me.Controls.Add(Me.UserIcon)
@@ -278,7 +278,7 @@ Partial Class HomePage
     Friend WithEvents UserIcon As PictureBox
     Friend WithEvents CarPicture As PictureBox
     Friend WithEvents ScheduleButton As Button
-    Friend WithEvents pastTripButton As Button
+    Friend WithEvents TripHistoryButton As Button
     Friend WithEvents MapButton As Button
     Friend WithEvents BatteryLabel As Label
     Friend WithEvents BatteryIcon As PictureBox
