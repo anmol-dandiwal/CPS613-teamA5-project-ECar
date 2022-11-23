@@ -34,12 +34,12 @@ Partial Class PastTripsPage
         'PastTripsLabel
         '
         Me.PastTripsLabel.AutoSize = True
-        Me.PastTripsLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.PastTripsLabel.Font = New System.Drawing.Font("Eras Medium ITC", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.PastTripsLabel.ForeColor = System.Drawing.SystemColors.ControlText
         Me.PastTripsLabel.Location = New System.Drawing.Point(130, 25)
         Me.PastTripsLabel.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.PastTripsLabel.Name = "PastTripsLabel"
-        Me.PastTripsLabel.Size = New System.Drawing.Size(149, 36)
+        Me.PastTripsLabel.Size = New System.Drawing.Size(134, 32)
         Me.PastTripsLabel.TabIndex = 6
         Me.PastTripsLabel.Text = "Past Trips"
         '

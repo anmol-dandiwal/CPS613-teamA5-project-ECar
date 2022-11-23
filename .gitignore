@@ -13,3 +13,10 @@
 /.vs/slnx.sqlite
 /ECarApp/bin/Debug/net6.0-windows/ECarApp.pdb
 /ECarApp/bin/Debug/net6.0-windows/ECarApp.dll
+/ECarApp/obj/Debug/net6.0-windows/refint/ECarApp.dll
+/ECarApp/obj/Debug/net6.0-windows/ref/ECarApp.dll
+/ECarApp/obj/Debug/net6.0-windows/ECarApp.vbproj.GenerateResource.cache
+/ECarApp/obj/Debug/net6.0-windows/ECarApp.vbproj.FileListAbsolute.txt
+/ECarApp/obj/Debug/net6.0-windows/ECarApp.vbproj.CoreCompileInputs.cache
+/ECarApp/obj/Debug/net6.0-windows/ECarApp.pdb
+/ECarApp/obj/Debug/net6.0-windows/ECarApp.dll
