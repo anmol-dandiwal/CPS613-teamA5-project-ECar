@@ -40,6 +40,8 @@ Partial Class HomePage
         Me.RiderLabel = New System.Windows.Forms.Label()
         Me.OwnerLabel = New System.Windows.Forms.Label()
         Me.IntrusionAlertPopUp = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.TripStatusButton = New System.Windows.Forms.Button()
+        Me.TripStatusCarPicture = New System.Windows.Forms.PictureBox()
         CType(Me.UserIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.CarPicture, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BatteryIcon, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -48,6 +50,7 @@ Partial Class HomePage
         CType(Me.MapIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SwapIcon, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.IntrusionAlertPopUp, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TripStatusCarPicture, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'UserIcon
@@ -238,11 +241,40 @@ Partial Class HomePage
         '
         Me.IntrusionAlertPopUp.ContainerControl = Me
         '
+        'TripStatusButton
+        '
+        Me.TripStatusButton.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.TripStatusButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.TripStatusButton.Font = New System.Drawing.Font("Eras Medium ITC", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.TripStatusButton.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.TripStatusButton.Location = New System.Drawing.Point(27, 354)
+        Me.TripStatusButton.Margin = New System.Windows.Forms.Padding(6)
+        Me.TripStatusButton.Name = "TripStatusButton"
+        Me.TripStatusButton.Padding = New System.Windows.Forms.Padding(35, 0, 0, 0)
+        Me.TripStatusButton.Size = New System.Drawing.Size(325, 88)
+        Me.TripStatusButton.TabIndex = 16
+        Me.TripStatusButton.Text = "Trip Status"
+        Me.TripStatusButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.TripStatusButton.UseVisualStyleBackColor = False
+        '
+        'TripStatusCarPicture
+        '
+        Me.TripStatusCarPicture.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        Me.TripStatusCarPicture.Image = Global.ECarApp.My.Resources.Resources.bookCarIcon
+        Me.TripStatusCarPicture.Location = New System.Drawing.Point(251, 368)
+        Me.TripStatusCarPicture.Name = "TripStatusCarPicture"
+        Me.TripStatusCarPicture.Size = New System.Drawing.Size(60, 61)
+        Me.TripStatusCarPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.TripStatusCarPicture.TabIndex = 17
+        Me.TripStatusCarPicture.TabStop = False
+        '
         'HomePage
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.ClientSize = New System.Drawing.Size(380, 757)
+        Me.Controls.Add(Me.TripStatusCarPicture)
+        Me.Controls.Add(Me.TripStatusButton)
         Me.Controls.Add(Me.SwapIcon)
         Me.Controls.Add(Me.RiderLabel)
         Me.Controls.Add(Me.OwnerLabel)
@@ -261,7 +293,7 @@ Partial Class HomePage
         Me.Margin = New System.Windows.Forms.Padding(6)
         Me.Name = "HomePage"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "HomePage"
+        Me.Text = "Car Location"
         CType(Me.UserIcon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.CarPicture, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BatteryIcon, System.ComponentModel.ISupportInitialize).EndInit()
@@ -270,6 +302,7 @@ Partial Class HomePage
         CType(Me.MapIcon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.SwapIcon, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.IntrusionAlertPopUp, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TripStatusCarPicture, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -291,4 +324,6 @@ Partial Class HomePage
     Friend WithEvents RiderLabel As Label
     Friend WithEvents OwnerLabel As Label
     Friend WithEvents IntrusionAlertPopUp As ErrorProvider
+    Friend WithEvents TripStatusCarPicture As PictureBox
+    Friend WithEvents TripStatusButton As Button
 End Class

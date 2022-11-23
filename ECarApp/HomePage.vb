@@ -4,6 +4,11 @@ Public Class HomePage
     Dim IntrusionAlert = False
     Dim CollisionAlert = False
     Dim FailureAlert = False
+    Dim newRideAlert = False
+    Private Sub HomePage_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        TripStatusButton.Hide()
+        TripStatusCarPicture.Hide()
+    End Sub
     Private Sub ScheduleButton_Click(sender As Object, e As EventArgs) Handles ScheduleButton.Click, CalendarIcon.Click
         If Not IntrusionAlert Then
             IntrusionDialog.ShowDialog()
@@ -69,5 +74,20 @@ Public Class HomePage
         Else
             PastTripsPage.Show()
         End If
+    End Sub
+
+    Private Sub MapButton_Click(sender As Object, e As EventArgs) Handles MapButton.Click
+        If Not newRideAlert Then
+            NewRideDialog.ShowDialog()
+            newRideAlert = True
+        Else
+            Me.Show()
+        End If
+    End Sub
+
+    Private Sub TripStatusButton_Click(sender As Object, e As EventArgs) Handles TripStatusButton.Click
+        NewRideDialog.Show()
+        NewRideDialog.DeclineButton.Text = "Cancel this Ride."
+
     End Sub
 End Class

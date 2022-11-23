@@ -1,6 +1,6 @@
 ﻿Public Class IntrusionDialog
     Private Sub YesButton_Click(sender As Object, e As EventArgs) Handles YesButton.Click
-        MessageBox.Show("Authroities are en route.", "Success", MessageBoxButtons.OK)
+        MessageBox.Show("Authorities are en route.", "Success", MessageBoxButtons.OK)
         Me.Close()
     End Sub
 
